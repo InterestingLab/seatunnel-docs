@@ -15,7 +15,7 @@
 | [zk-connect](#zk-connect-string) | array | yes | - |
 | [table](#table-string) | string | yes | - |
 | [tenantId](#tenant-id-string) | string | no | - |
-| [skipNormalizingIdentifier](#skipNormalizingIdentifier boolean) | boolean | no | false |
+| [skipNormalizingIdentifier](#skip-normalizing-identifier-boolean) | boolean | no | false |
 
 ##### zk-connect [string]
 
@@ -29,7 +29,7 @@
 
 租户ID，非必须配置项
 
-##### skipNormalizingIdentifier [boolean]
+##### skip-normalizing-identifier [boolean]
 
 是否跳过规范化标识符，如果列名被双引号包围，它是按原样使用的，否则名称是大写的。非必须配置项，默认为false
 
