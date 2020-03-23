@@ -33,6 +33,8 @@
       - [File](/zh-cn/v2/spark/configuration/sink-plugins/File.md)
   
       - [Hdfs](/zh-cn/v2/spark/configuration/sink-plugins/Hdfs.md)
+      
+      - [Phoenix](/zh-cn/v2/spark/configuration/sink-plugins/Phoenix.md)
 
     - [完整配置文件案例](/zh-cn/v2/spark/configuration/ConfigExamples.md)
 
