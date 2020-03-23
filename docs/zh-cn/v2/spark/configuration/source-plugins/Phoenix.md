@@ -17,7 +17,7 @@
 | [columns](#columns-string-list) | string | no | - |
 | [tenantId](#tenant-id-string) | string | no | - |
 | [predicate](#predicate-string) | string | no | - |
-| [result_table_name](#result_table_name-string) | string | yes | - |
+| [result_table_name](#common options string) | string | yes | - |
 
 
 ##### zk-connect [string]
@@ -26,7 +26,7 @@
 
 ##### table [string]
 
-目标表名
+源数据表名
 
 ##### columns [string-list]
 
@@ -40,9 +40,7 @@
 
 条件过滤串配置, 非必须配置项
 
-##### result_table_name [string]
-
-Waterdrop Register as spark temporary view name
+##### common options [string]
 
 `Source` 插件通用参数，详情参照 [Source Plugin](/zh-cn/v2/spark/configuration/source-plugins/)
 
