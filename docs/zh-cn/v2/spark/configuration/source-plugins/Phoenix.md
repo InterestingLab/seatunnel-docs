@@ -17,7 +17,6 @@
 | [columns](#columns-string-list) | string | no | - |
 | [tenantId](#tenant-id-string) | string | no | - |
 | [predicate](#predicate-string) | string | no | - |
-| [result_table_name](#common options string) | string | yes | - |
 
 
 ##### zk-connect [string]
