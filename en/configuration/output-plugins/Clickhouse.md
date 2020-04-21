@@ -38,6 +38,10 @@ Field list which need to be written to ClickHouse。
 
 ClickHouse hosts, format as `hostname:port`
 
+##### cluster [string]
+
+ClickHouse cluster name which the table belongs to, see [Distributed](https://clickhouse.tech/docs/en/operations/table_engines/distributed/)
+
 ##### password [string]
 
 ClickHouse password, only used when ClickHouse has authority authentication.
@@ -93,3 +97,14 @@ clickhouse {
 }
 ```
 
+#### distribue table config
+```
+ClickHouse {
+    host = "localhost:8123"
+    database = "nginx"
+    table = "access_msg"
+    cluster = "no_replica_cluster"
+    fields = ["date", "datetime", "hostname", "http_code", "data_size", "ua", "request_time"]
+}
+```
+> Query system.clusters table info, find out which physic shard node store the table. The single spark partition would only write to a certain ClickHouse node using random policy. 
