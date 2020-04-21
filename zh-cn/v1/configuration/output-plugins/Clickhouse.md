@@ -41,6 +41,10 @@ ClickHouse database
 
 ClickHouse集群地址，格式为host:port，允许指定多个host。如"host1:8123,host2:8123"。
 
+##### cluster [string]
+
+ClickHouse 配置分布式表的时候，提供配置表隶属的集群名称，参考官方文档[Distributed](https://clickhouse.tech/docs/en/operations/table_engines/distributed/)
+
 ##### password [string]
 
 ClickHouse用户密码，仅当ClickHouse中开启权限时需要此字段。
@@ -128,3 +132,15 @@ ClickHouse {
 ```
 
 > 当出现网络超时或者网络异常的情况下，重试写入3次
+
+#### 分布式表配置
+```
+ClickHouse {
+    host = "localhost:8123"
+    database = "nginx"
+    table = "access_msg"
+    cluster = "no_replica_cluster"
+    fields = ["date", "datetime", "hostname", "http_code", "data_size", "ua", "request_time"]
+}
+```
+> 根据提供的cluster名称，会从system.clusters表里面获取当前table实际分布在那些节点上。单spark partition的数据会根据随机策略选择某一个ClickHouse节点执行具体的写入操作
