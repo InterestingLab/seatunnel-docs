@@ -17,6 +17,7 @@
 | [database](#database-string) | string |yes|-|
 | [fields](#fields-array) | array | no |-|
 | [host](#host-string) | string | yes |-|
+| [cluster](#cluster-string) | string | no |-|
 | [password](#password-string) | string | no |-|
 | [retry](#retry-number) | number| no |1|
 | [retry_codes](#password-array) | array | no |[ ]|
