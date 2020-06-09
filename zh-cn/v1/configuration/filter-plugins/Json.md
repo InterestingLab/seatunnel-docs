@@ -85,109 +85,113 @@
 
 ### Examples
 
-1. 不使用`target_field`
+1. 不使用 `target_field`
 
-    ```
-    json {
-        source_field = "message"
-    }
-    ```
+```
+json {
+    source_field = "message"
+}
+```
 
-    * **Input**
+* **Input**
 
-    ```
-    +----------------------------+
-    |message                   |
-    +----------------------------+
-    |{"name": "ricky", "age": 24}|
-    |{"name": "gary", "age": 28} |
-    +----------------------------+
-    ```
+```
++----------------------------+
+|message                   |
++----------------------------+
+|{"name": "ricky", "age": 24}|
+|{"name": "gary", "age": 28} |
++----------------------------+
+```
 
-    * **Output**
+* **Output**
 
-    ```
-    +----------------------------+---+-----+
-    |message                   |age|name |
-    +----------------------------+---+-----+
-    |{"name": "gary", "age": 28} |28 |gary |
-    |{"name": "ricky", "age": 23}|23 |ricky|
-    +----------------------------+---+-----+
-    ```
+```
++----------------------------+---+-----+
+|message                   |age|name |
++----------------------------+---+-----+
+|{"name": "gary", "age": 28} |28 |gary |
+|{"name": "ricky", "age": 23}|23 |ricky|
++----------------------------+---+-----+
+```
 
-2. 使用`target_field`
+2. 使用 `target_field`
 
-    ```
-    json {
-        source_field = "message"
-        target_field = "info"
-    }
-    ```
+使用 `target_field` 会将解析后的嵌套结果存储在指定字段中。
 
-    * **Input**
+```
+json {
+    source_field = "message"
+    target_field = "info"
+    result_table_name = "view_1"
+}
+```
 
-    ```
-    +----------------------------+
-    |message                   |
-    +----------------------------+
-    |{"name": "ricky", "age": 24}|
-    |{"name": "gary", "age": 28} |
-    +----------------------------+
-    ```
+* **Input**
 
-    * **Output**
+```
++----------------------------+
+|message                   |
++----------------------------+
+|{"name": "ricky", "age": 24}|
+|{"name": "gary", "age": 28} |
++----------------------------+
+```
 
-    ```
-    +----------------------------+----------+
-    |message                   |info      |
-    +----------------------------+----------+
-    |{"name": "gary", "age": 28} |[28,gary] |
-    |{"name": "ricky", "age": 23}|[23,ricky]|
-    +----------------------------+----------+
+* **Output**
 
-    ```
+```
++----------------------------+----------+
+|message                   |info      |
++----------------------------+----------+
+|{"name": "gary", "age": 28} |[28,gary] |
+|{"name": "ricky", "age": 23}|[23,ricky]|
++----------------------------+----------+
 
-    > json处理的结果支持**select * from where info.age = 23**此类SQL语句
+```
+
+> json处理的结果支持**select * from view_1 where info.age = 23**此类SQL语句
 
 3. 使用`schema_file`
-    ```
-    json {
-        source_field = "message"
-        schema_file = "demo.json"
-    }
-    ```
-    
-    * **Schema**
-    
-    在 Driver Node 的 `/opt/waterdrop/plugins/json/files/schemas/demo.json` 中放置内容如下：
-    
-    ```json
-    {
-       "name": "demo",
-       "age": 24,
-       "city": "LA"
-    }
-    ```
-    
-    * **Input**
-    ```
-    +----------------------------+
-    |message                   |
-    +----------------------------+
-    |{"name": "ricky", "age": 24}|
-    |{"name": "gary", "age": 28} |
-    +----------------------------+
-    ```
-    
-    * **Output**
 
-    ```
-    +----------------------------+---+-----+-----+
-    |message                     |age|name |city |
-    +----------------------------+---+-----+-----+
-    |{"name": "gary", "age": 28} |28 |gary |null |
-    |{"name": "ricky", "age": 23}|23 |ricky|null |
-    +----------------------------+---+-----+-----+
-    ```
+```
+json {
+    source_field = "message"
+    schema_file = "demo.json"
+}
+```
 
-    > 若使用 cluster 模式进行部署，需确保 json schemas 目录被打包到 plugins.tar.gz 中
+* **Schema**
+
+在 Driver Node 的 `/opt/waterdrop/plugins/json/files/schemas/demo.json` 中放置内容如下：
+
+```json
+{
+   "name": "demo",
+   "age": 24,
+   "city": "LA"
+}
+```
+
+* **Input**
+```
++----------------------------+
+|message                   |
++----------------------------+
+|{"name": "ricky", "age": 24}|
+|{"name": "gary", "age": 28} |
++----------------------------+
+```
+
+* **Output**
+
+```
++----------------------------+---+-----+-----+
+|message                     |age|name |city |
++----------------------------+---+-----+-----+
+|{"name": "gary", "age": 28} |28 |gary |null |
+|{"name": "ricky", "age": 23}|23 |ricky|null |
++----------------------------+---+-----+-----+
+```
+
+> 若使用 cluster 模式进行部署，需确保 json schemas 目录被打包到 plugins.tar.gz 中
