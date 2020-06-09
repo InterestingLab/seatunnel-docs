@@ -55,6 +55,8 @@
     - [Table](/zh-cn/v1/configuration/filter-plugins/Table)
     - [Truncate](/zh-cn/v1/configuration/filter-plugins/Truncate)
     - [Uppercase](/zh-cn/v1/configuration/filter-plugins/Uppercase)
+    - [Urlencode](/zh-cn/v1/configuration/filter-plugins/Urlencode)
+    - [Urldecode](/zh-cn/v1/configuration/filter-plugins/Urldecode)
     - [Uuid](/zh-cn/v1/configuration/filter-plugins/Uuid)
     - [Watermark](/zh-cn/v1/configuration/filter-plugins/Watermark)
 
