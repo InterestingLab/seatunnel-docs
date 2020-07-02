@@ -10,6 +10,7 @@
   - [通用配置](/zh-cn/v1/configuration/base)
   - [Input插件](/zh-cn/v1/configuration/input-plugin)
     - [AmazonKinesis [商业版]](/zh-cn/v1/configuration/input-plugins/AmazonKinesisStream)
+    - [Alluxio](/zh-cn/v1/configuration/input-plugins/Alluxio)
     - [ElasticSearch](/zh-cn/v1/configuration/input-plugins/Elasticsearch)
     - [FakeStream](/zh-cn/v1/configuration/input-plugins/FakeStream)
     - [File](/zh-cn/v1/configuration/input-plugins/File)
@@ -30,7 +31,6 @@
     - [Tidb](/zh-cn/v1/configuration/input-plugins/Tidb)
     - [阿里云DTS [商业版]](/zh-cn/v1/configuration/input-plugins/AliyunDtsStream)
     - [阿里云SLS [商业版]](/zh-cn/v1/configuration/input-plugins/AliyunSlsStream)
-    - [Alluxio](/zh-cn/v1/configuration/input-plugins/Alluxio)
         
   - [Filter插件](/zh-cn/v1/configuration/filter-plugin)
     - [Add](/zh-cn/v1/configuration/filter-plugins/Add)
@@ -62,6 +62,7 @@
     - [Watermark](/zh-cn/v1/configuration/filter-plugins/Watermark)
 
   - [Output插件](/zh-cn/v1/configuration/output-plugin)
+    - [Alluxio](/zh-cn/v1/configuration/output-plugins/Alluxio)
     - [Clickhouse](/zh-cn/v1/configuration/output-plugins/Clickhouse)
     - [Elasticsearch](/zh-cn/v1/configuration/output-plugins/Elasticsearch)
     - [File](/zh-cn/v1/configuration/output-plugins/File)
@@ -77,7 +78,6 @@
     - [S3](/zh-cn/v1/configuration/output-plugins/S3)
     - [Stdout](/zh-cn/v1/configuration/output-plugins/Stdout)
     - [Tidb](/zh-cn/v1/configuration/output-plugins/Tidb)
-    - [Alluxio](/zh-cn/v1/configuration/output-plugins/Alluxio)
 
 - [部署与运行](/zh-cn/v1/deployment)
 
