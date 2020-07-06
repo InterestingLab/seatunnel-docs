@@ -25,7 +25,7 @@
 
 ##### options.* [object]
 
-自定义参数，当`format = "xml"`时必须设置`optionss.rowTag`，配置XML格式数据的Tag，其他参数不是必填参数。
+自定义参数，当 `format` 为 **xml** 时必须设置 `optionss.rowTag`，配置XML格式数据的Tag，其他参数不是必填参数。
 
 
 ##### options.rowTag [string]
@@ -53,7 +53,7 @@ file {
 }
 ```
 
-也支持读取XML格式文件
+读取XML格式文件
 
 ```
 file {
@@ -63,3 +63,17 @@ file {
     result_table_name = "books"
 }
 ```
+
+读取CSV格式文件
+
+```
+file {
+    path = "file:///data0/src/books.csv"
+    format = "csv"
+    # 将第一列的header作为列名
+    # 否则将以 _c0,_c1,_c2...依次命名
+    options.header = "true"
+    result_table_name = "books"
+}
+```
+

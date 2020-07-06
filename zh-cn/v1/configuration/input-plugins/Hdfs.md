@@ -31,7 +31,7 @@
 
 ##### options.rowTag [string]
 
-当format为xml必须设置`optionss.rowTag`，配置XML格式数据的Tag
+当 `format` 为 **xml** 必须设置 `optionss.rowTag`，配置XML格式数据的Tag
 
 
 ##### path [string]
@@ -66,8 +66,7 @@ hdfs {
 }
 ```
 
-
-也支持读取XML格式的文件:
+读取XML格式的文件:
 
 ```
 hdfs {
@@ -75,5 +74,18 @@ hdfs {
     path = "hdfs://m2:8022/waterdrop-logs/books.xml"
     options.rowTag = "book"
     format = "xml"
+}
+```
+
+读取CSV格式文件
+
+```
+hdfs {
+    path = "hdfs://m2:8022/waterdrop-logs/books.csv"
+    format = "csv"
+    # 将第一列的header作为列名
+    # 否则将以 _c0,_c1,_c2...依次命名
+    options.header = "true"
+    result_table_name = "books"
 }
 ```
