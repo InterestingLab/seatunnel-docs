@@ -50,7 +50,8 @@ csv格式通过这个参数来设置分隔符等。例如设置列分隔符为\t
 - json
    - json的schema参数是提供一个原数据的json字符串，可以自动生成schema，但是需要提供内容最全的原数据，否则会有字段丢失。
 - avro
-   - avro的schema参数是提供一个标准的avro的schema字符串，如`{\"name\":\"test\",\"type\":\"record\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"age\",\"type\":\"long\"},{\"name\":\"addrs\",\"type\":{\"name\":\"addrs\",\"type\":\"record\",\"fields\":[{\"name\":\"province\",\"type\":\"string\"},{\"name\":\"city\",\"type\":\"string\"}]}}]}`
+   - avro的schema参数是提供一个标准的avro的schema JSON字符串，如`{\"name\":\"test\",\"type\":\"record\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"age\",\"type\":\"long\"},{\"name\":\"addrs\",\"type\":{\"name\":\"addrs\",\"type\":\"record\",\"fields\":[{\"name\":\"province\",\"type\":\"string\"},{\"name\":\"city\",\"type\":\"string\"}]}}]}`
+   - 如需详细了解Avro Schema JSON字符串应该如何定义，请参见：https://avro.apache.org/docs/current/spec.html
  
 ##### consumer.* [string]
 
