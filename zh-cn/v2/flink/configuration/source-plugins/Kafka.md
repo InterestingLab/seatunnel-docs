@@ -15,7 +15,7 @@
 | [consumer.group.id](#consumergroupid-string) | string | yes | - |
 | [consumer.bootstrap.servers](#consumerbootstrapservers-string) | string | yes | - |
 | [schema](#schema-string) | string | yes | - | 
-| [format](#format-string) | string | yes | - | 
+| [format.type](#format-string) | string | yes | - | 
 | [format.*](#format.*-string) | string | no | - | 
 | [consumer.*](#consumer-string) | string | no | - |
 | [rowtime.field](#rowtime.field-string) | string | no | - | 
@@ -35,10 +35,11 @@ Kafka consumer group id，用于区分不同的消费组。
 
 Kafka集群地址，多个用","隔开
 
-##### format [string]
-目前支持两种格式
+##### format.type [string]
+目前支持三种种格式
 - json
 - csv
+- avro
 
 ##### format.* [string]
 csv格式通过这个参数来设置分隔符等。例如设置列分隔符为\t，`format.field-delimiter=\\t`
@@ -48,8 +49,9 @@ csv格式通过这个参数来设置分隔符等。例如设置列分隔符为\t
    - csv的schema是一个jsonArray的字符串，如`"[{\"field\":\"name\",\"type\":\"string\"},{\"field\":\"age\",\"type\":\"int\"}]"`。
 - json
    - json的schema参数是提供一个原数据的json字符串，可以自动生成schema，但是需要提供内容最全的原数据，否则会有字段丢失。
-
-
+- avro
+   - avro的schema参数是提供一个标准的avro的schema字符串，如`{\"name\":\"test\",\"type\":\"record\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"age\",\"type\":\"long\"},{\"name\":\"addrs\",\"type\":{\"name\":\"addrs\",\"type\":\"record\",\"fields\":[{\"name\":\"province\",\"type\":\"string\"},{\"name\":\"city\",\"type\":\"string\"}]}}]}`
+ 
 ##### consumer.* [string]
 
 除了以上必备的kafka consumer客户端必须指定的参数外，用户还可以指定多个consumer客户端非必须参数，覆盖了[kafka官方文档指定的所有consumer参数](http://kafka.apache.org/documentation.html#oldconsumerconfigs).
@@ -83,7 +85,7 @@ csv格式通过这个参数来设置分隔符等。例如设置列分隔符为\t
     consumer.group.id = "waterdrop5"
     topics = test
     result_table_name = test
-    format = csv
+    format.type = csv
     schema = "[{\"field\":\"name\",\"type\":\"string\"},{\"field\":\"age\",\"type\":\"int\"}]"
     format.field-delimiter = ";"
     format.allow-comments = "true"

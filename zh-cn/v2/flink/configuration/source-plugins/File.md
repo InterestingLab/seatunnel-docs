@@ -10,12 +10,12 @@
 ### Options
 | name | type | required | default value |
 | --- | --- | --- | --- |
-| [format](#format-string) | string | yes | - |
+| [format.type](#format-string) | string | yes | - |
 | [path](#path-string) | string | yes | - |
 | [schema](#schema-string)| string | yes | - |
 | [common-options](#common-options-string)| string | no | - |
 
-##### format [string]
+##### format.type [string]
 
 从文件系统中读取文件的格式，目前支持`csv`、`json`、`parquet` 、`orc`和 `text`。
 
