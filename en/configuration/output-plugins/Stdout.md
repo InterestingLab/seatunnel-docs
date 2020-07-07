@@ -13,21 +13,21 @@ Output Rows to console, it is always used for debugging.
 | name | type | required | default value | engine |
 | --- | --- | --- | --- | --- |
 | [limit](#limit-number) | number | no | 100 | batch/spark streaming |
-| [serializer](#serializer-string) | string | no | plain | batch/spark streaming |
+| [format](#format-string) | string | no | plain | batch/spark streaming |
 
 ##### limit [number]
 
 Limit number of output. `-1` means no limit.
 
-##### serializer [string]
+##### format [string]
 
-The serializer used for output, the allowed serializers are `json`, `plain`
+The format used for output, the allowed formats are `json`, `plain` and `schema`
 
 ### Example
 
 ```
 stdout {
     limit = 10
-    serializer = "json"
+    format = "json"
 }
 ```

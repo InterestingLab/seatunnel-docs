@@ -15,7 +15,7 @@
 | [producer.bootstrap.servers](#producerbootstrapservers-string) | string | yes | - | all streaming |
 | [topic](#topic-string) | string | yes | - | all streaming |
 | [producer.*](#producer-string) | string | no | - | all streaming |
-| [serializer](#serializer-string) | string | no | json | all streaming |
+| [format](#format-string) | string | no | json | all streaming |
 | [streaming_output_mode](#streaming_output_mode-string) | string | no | append | structured streaming |
 | [checkpointLocation](#checkpointLocation-string) | string | no | - | structured streaming |
 | [common-options](#common-options-string)| string | no | all streaming |
@@ -48,7 +48,7 @@ Kafka Topic
 
 你可以指定输出模式，complete|append|update三种，详见Spark文档http://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes
 
-##### serializer [string]
+##### format [string]
 
 序列化方法，当前支持json和text，如果选择text方式，需保证数据结构中仅有一个字段。
 

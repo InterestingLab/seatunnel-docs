@@ -17,7 +17,7 @@ Write Rows to local file system.
 | [path](#path-string) | string | yes | - |
 | [path_time_format](#path_time_format-string) | string | no | yyyyMMddHHmmss |
 | [save_mode](#save_mode-string) | string | no | error |
-| [serializer](#serializer-string) | string | no | json |
+| [format](#format-string) | string | no | json |
 
 ##### options [object]
 
@@ -51,9 +51,9 @@ The detailed time format syntax:[Java SimpleDateFormat](https://docs.oracle.com/
 
 Save mode, supports `overwrite`, `append`, `ignore` and `error`. The detail of save_mode see [save-modes](http://spark.apache.org/docs/2.2.0/sql-programming-guide.html#save-modes).
 
-##### serializer [string]
+##### format [string]
 
-Serializer, supports `csv`, `json`, `parquet` and `text`.
+Output format, supports `csv`, `json`, `parquet` and `text`.
 
 
 ### Example
@@ -61,6 +61,6 @@ Serializer, supports `csv`, `json`, `parquet` and `text`.
 ```
 file {
     path = "file:///var/logs"
-    serializer = "text"
+    format = "text"
 }
 ```
