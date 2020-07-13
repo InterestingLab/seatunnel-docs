@@ -12,6 +12,7 @@
     - [MySQL](/en/configuration/input-plugins/MySQL)
     - [S3](/en/configuration/input-plugins/S3)
     - [Socket](/en/configuration/input-plugins/Socket)
+    - [RedisStream](/en/configuration/input-plugins/RedisStream)
     - [Alluxio](/en/configuration/input-plugins/Alluxio)
   - [Filter Plugin](/en/configuration/filter-plugin)
     - [Add](/en/configuration/filter-plugins/Add)
