@@ -1,4 +1,4 @@
-## Input plugin : RedisSocket [Streaming]
+## Input plugin : RedisStream [Streaming]
 
 * Author: InterestingLab
 * Homepage: https://interestinglab.github.io/waterdrop
@@ -70,7 +70,7 @@ redis maxAttempts config
 ### Example
 
 ```
-RedisSocket {
+RedisStream {
     host = "127.0.0.1:7000,127.0.0.1:7001,127.0.0.1:7002"
     prefKey = "api"
     queue = "test"
