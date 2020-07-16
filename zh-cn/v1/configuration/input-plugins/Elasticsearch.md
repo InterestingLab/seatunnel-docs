@@ -8,9 +8,6 @@
 
 从 Elasticsearch 中读取数据
 
-### es作为input插件tips
-在waterdrop对于es的读取中,注意:!(es.configuration)[https://www.elastic.co/guide/en/elasticsearch/hadoop/6.2/configuration.html]中对我们读取es效率有帮助的配置项，用以最大化waterdrop读取es的效率，该参数为：es.input.max.docs.per.partition的值如下：分区数 = 总数据条数/es.input.max.docs.per.partition。让用户选择合适的分区数，用以处理可能数据量较大时带来的shuffle过长使得es与其他组件迁移速率低下的问题。也是通过控制读取es的分区数来加快shuffle的过程，添加说明可以使得用户更加方便高效。这一点与es的官网对于读取es的分片所应用的cpu核数(线程数)的建议有点不一样，需要实践才能知道合适的大小。并且通过测试这个参数设置的合理，读取es的效率可以提升3-10倍。
-
 ### Options
 
 | name | type | required | default value |
@@ -36,7 +33,17 @@ ElasticSearch index名称，支持 `*` 模糊匹配
 用户还可以指定多个非必须参数，详细的参数列表见[Elasticsearch支持的参数](https://www.elastic.co/guide/en/elasticsearch/hadoop/current/configuration.html#cfg-mapping).
 
 如指定 `es.read.metadata` 的方式是: `es.read.metadata = true`。如果不指定这些非必须参数，它们将使用官方文档给出的默认值。
-如上所述的 `es.input.max.docs.per.partition`,需要用户自行根据实际的数据量进行调整
+
+### Tips
+
+在使用 ElasticSearch插件时,可以配置参数 `es.input.max.docs.per.partition`，用以最大化 Waterdrop 读取 es 的效率，该参数用于决定任务的分区个数：
+
+> 分区数 = 总数据条数 / es.input.max.docs.per.partition
+
+通过增大任务分区数以支持更高的并发能力，根据实践优化这个参数的设置，读取ElasticSearch的效率可以提升3-10倍。
+
+
+如上所述 `es.input.max.docs.per.partition`，支持用户自行根据实际的数据量进行调整，否则分区数为 ElasticSearch 索引 Shard 的个数。
 
 ##### common options [string]
 
