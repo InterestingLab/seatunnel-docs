@@ -13,16 +13,16 @@
 | name | type | required | default value | engine |
 | --- | --- | --- | --- | --- |
 | [limit](#limit-number) | number | no | 100 | batch/spark streaming |
-| [serializer](#serializer-string) | string | no | plain | batch/spark streaming |
+| [format](#format-string) | string | no | plain | batch/spark streaming |
 | [common-options](#common-options-string)| string | no | - | all streaming |
 
 ##### limit [number]
 
 限制输出Row的条数，合法范围[-1, 2147483647], `-1`表示输出最多2147483647条Row
 
-##### serializer [string]
+##### format [string]
 
-输出时序列化的格式，可用的serializer包括: `json`, `plain`
+输出到终端的格式，可用的`format`包括: `json`, `plain` 以及 `schema`，用于输出数据的 **Schema**
 
 ##### common options [string]
 
@@ -34,7 +34,7 @@
 ```
 stdout {
     limit = 10
-    serializer = "json"
+    format = "json"
 }
 ```
 

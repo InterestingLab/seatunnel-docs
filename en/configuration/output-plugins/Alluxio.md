@@ -17,7 +17,7 @@ Write Rows to Alluxio.
 | [path](#path-string) | string | yes | - |
 | [path_time_format](#path_time_format-string) | string | no | yyyyMMddHHmmss |
 | [save_mode](#save_mode-string) | string | no | error |
-| [serializer](#serializer-string) | string | no | json |
+| [format](#format-string) | string | no | json |
 
 ##### options [object]
 
@@ -51,9 +51,9 @@ The detailed time format syntax:[Java SimpleDateFormat](https://docs.oracle.com/
 
 Save mode, supports `overwrite`, `append`, `ignore` and `error`. The detail of save_mode see [save-modes](http://spark.apache.org/docs/2.2.0/sql-programming-guide.html#save-modes).
 
-##### serializer [string]
+##### format [string]
 
-Serializer, supports `csv`, `json`, `parquet` and `text`.
+format, supports `csv`, `json`, `parquet` and `text`.
 
 ### Note 
 if use alluxio with zookeeper, please add below in start-waterdrop.sh
@@ -75,7 +75,7 @@ spark.executorJavaOpts="-Dalluxio.user.file.writetype.default=CACHE_THROUGH -Dal
 ```
 alluxio {
     path = "alluxio:///var/logs-${now}"
-    serializer = "json"
+    format = "json"
     path_time_format = "yyyy.MM.dd"
 }
 ```

@@ -17,7 +17,7 @@
 | [path](#path-string) | string | yes | - |
 | [path_time_format](#path_time_format-string) | string | no | yyyyMMddHHmmss |
 | [save_mode](#save_mode-string) | string | no | error |
-| [serializer](#serializer-string) | string | no | json |
+| [format](#format-string) | string | no | json |
 | [common-options](#common-options-string)| string | no | - |
 
 
@@ -52,7 +52,7 @@ Hadoop集群文件路径，以hdfs://开头
 
 存储模式，当前支持overwrite，append，ignore以及error。每个模式具体含义见[save-modes](http://spark.apache.org/docs/2.2.0/sql-programming-guide.html#save-modes)
 
-##### serializer [string]
+##### format [string]
 
 序列化方法，当前支持csv、json、parquet、orc和text
 
@@ -66,7 +66,7 @@ Hadoop集群文件路径，以hdfs://开头
 ```
 hdfs {
     path = "hdfs:///var/logs-${now}"
-    serializer = "json"
+    format = "json"
     path_time_format = "yyyy.MM.dd"
 }
 ```
