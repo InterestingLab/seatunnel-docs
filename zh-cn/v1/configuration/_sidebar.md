@@ -28,6 +28,7 @@
     - [Hive](/zh-cn/v1/configuration/input-plugins/Hive)
     - [S3Stream](/zh-cn/v1/configuration/input-plugins/S3Stream)
     - [SocketStream](/zh-cn/v1/configuration/input-plugins/SocketStream)
+    - [RedisStream](/zh-cn/v1/configuration/input-plugins/RedisStream)
     - [Tidb](/zh-cn/v1/configuration/input-plugins/Tidb)
     - [阿里云DTS [商业版]](/zh-cn/v1/configuration/input-plugins/AliyunDtsStream)
     - [阿里云SLS [商业版]](/zh-cn/v1/configuration/input-plugins/AliyunSlsStream)
