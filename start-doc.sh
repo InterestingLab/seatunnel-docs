@@ -1,1 +1,1 @@
-iidocsify serve .
+python -m SimpleHTTPServer 8090

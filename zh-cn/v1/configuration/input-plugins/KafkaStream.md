@@ -73,7 +73,7 @@ kafkaStream {
 }
 ```
 ### Notes
-* 在structuredStreaming模式下，如果kafka里的数据是json格式，可以指定json的schema，input将按照指定的schema进行解析，如果你需要流关联功能，还需要指定`table_name`这个参数以便在sql插件中使用
+* 在 `Spark Structured Streaming` 模式下，如果kafka里的数据是json格式，可以指定json的schema，`input` 将按照指定的schema进行解析，如果你需要流关联功能，还需要指定 `table_name` 这个参数以便在sql插件中使用
 如下
 ```
 kafkaStream {
@@ -85,3 +85,17 @@ kafkaStream {
     schema = "{\"name\":\"string\",\"age\":\"integer\",\"addrs\":{\"country\":\"string\",\"city\":\"string\"}}"
 }
 ```
+
+* 在 `Spark Streaming` 模式下，会将数据统一按照字符串进行处理，生成如下格式
+
+```
++--------------+-------------------------------+
+| topic        |       raw_message             |
++--------------+-------------------------------+
+| topic_name   |     kafka_message_1           |
++--------------+-------------------------------+
+| topic_name   |     kafka_message_2           |
++--------------+-------------------------------+
+```
+
+后续可以在 `filter`  部分使用 `json`、`grok`、`split` 等插件进行处理
