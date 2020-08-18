@@ -90,7 +90,7 @@ jdbc {
 
 #### Tips
 
-指定的JDBC的Jar包放置在 `plugins` 目录指定结构下，如下
+指定的JDBC的Jar包放置在 `plugins` 目录下的指定结构中，如下
 
 ```
 cd waterdrop
