@@ -86,3 +86,16 @@ jdbc {
 }
 ```
 > 根据指定字段划分分区
+
+
+#### Tips
+
+指定的JDBC的Jar包放置在 `plugins` 目录指定结构下，如下
+
+```
+cd waterdrop
+mkdir -p plugins/my_plugins/lib
+cp third-part.jar plugins/my_plugins/lib
+```
+
+即可被 `Waterdrop` 识别加载。
