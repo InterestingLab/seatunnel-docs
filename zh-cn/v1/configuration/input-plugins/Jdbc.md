@@ -39,7 +39,7 @@
 
 ##### table [string]
 
-表名
+表名，或者指定SQL语句用于过滤
 
 
 ##### url [string]
@@ -63,6 +63,17 @@ jdbc {
     driver = "com.mysql.jdbc.Driver"
     url = "jdbc:mysql://localhost:3306/info"
     table = "access"
+    result_table_name = "access_log"
+    user = "username"
+    password = "password"
+}
+```
+
+```
+jdbc {
+    driver = "com.mysql.jdbc.Driver"
+    url = "jdbc:mysql://localhost:3306/info"
+    table = "(select * from access) AS a"
     result_table_name = "access_log"
     user = "username"
     password = "password"
