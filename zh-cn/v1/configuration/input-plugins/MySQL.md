@@ -13,7 +13,7 @@
 | name | type | required | default value |
 | --- | --- | --- | --- |
 | [password](#password-string) | string | yes | - |
-| [jdbc.*](#jdbc-string) | string| no ||
+| [jdbc.*](#jdbc-string) | string| no | |
 | [table](#table-string) | string | yes | - |
 | [url](#url-string) | string | yes | - |
 | [user](#user-string) | string | yes | - |
@@ -34,7 +34,7 @@
 
 ##### table [string]
 
-表名
+表名，或者指定SQL语句用于过滤
 
 
 ##### url [string]
@@ -57,6 +57,16 @@ JDBC连接的URL。参考一个案例：`jdbc:mysql://localhost:3306/info`
 mysql {
     url = "jdbc:mysql://localhost:3306/info"
     table = "access"
+    result_table_name = "access_log"
+    user = "username"
+    password = "password"
+}
+```
+
+```
+mysql {
+    url = "jdbc:mysql://localhost:3306/info"
+    table = "(select * from access) AS a"
     result_table_name = "access_log"
     user = "username"
     password = "password"

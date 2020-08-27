@@ -39,7 +39,7 @@
 
 ##### table [string]
 
-表名
+表名，或者指定SQL语句用于过滤
 
 
 ##### url [string]
@@ -69,6 +69,17 @@ jdbc {
 }
 ```
 
+```
+jdbc {
+    driver = "com.mysql.jdbc.Driver"
+    url = "jdbc:mysql://localhost:3306/info"
+    table = "(select * from access) AS a"
+    result_table_name = "access_log"
+    user = "username"
+    password = "password"
+}
+```
+
 > 通过JDBC读取MySQL数据
 
 ```yaml
@@ -86,3 +97,16 @@ jdbc {
 }
 ```
 > 根据指定字段划分分区
+
+
+#### Tips
+
+指定的JDBC的Jar包放置在 `plugins` 目录下的指定结构中，如下
+
+```
+cd waterdrop
+mkdir -p plugins/my_plugins/lib
+cp third-part.jar plugins/my_plugins/lib
+```
+
+即可被 `Waterdrop` 识别加载。
