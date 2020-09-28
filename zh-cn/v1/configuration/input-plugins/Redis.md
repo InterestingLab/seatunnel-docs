@@ -12,11 +12,11 @@
 
 | name | type | required | default value |
 | --- | --- | --- | --- |
-| [host](#host) | string | yes | - |
-| [port](#port) | int | no | 6379 |
-| [key_pattern](#key_pattern) | string | yes | - |
-| [partition](#partition) | int | no | 3 |
-| [db_num](#db_num) | int | no | 0 |
+| [host](#host-string) | string | yes | - |
+| [port](#port-int) | int | no | 6379 |
+| [key_pattern](#key_pattern-string) | string | yes | - |
+| [partition](#partition-int) | int | no | 3 |
+| [db_num](#db_num-int) | int | no | 0 |
 | [common-options](#common-options-string)| string | yes | - |
 
 
