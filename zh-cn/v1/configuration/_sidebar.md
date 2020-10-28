@@ -35,8 +35,8 @@
     - [阿里云SLS [商业版]](/zh-cn/v1/configuration/input-plugins/AliyunSlsStream)
         
   - [Filter插件](/zh-cn/v1/configuration/filter-plugin)
-    - [Add](/zh-cn/v1/configuration/filter-plugins/Add)
-    - [Checksum](/zh-cn/v1/configuration/filter-plugins/Checksum)
+    - [Add](/zh-cn/v1/configuration/filter-plugins/Add)
+    - [Checksum](/zh-cn/v1/configuration/filter-plugins/Checksum)
     - [Convert](/zh-cn/v1/configuration/filter-plugins/Convert)
     - [Date](/zh-cn/v1/configuration/filter-plugins/Date)
     - [Drop](/zh-cn/v1/configuration/filter-plugins/Drop)

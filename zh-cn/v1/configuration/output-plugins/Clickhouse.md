@@ -81,6 +81,9 @@ ClickHouse用户用户名，仅当ClickHouse中开启权限时需要此字段
 
 ### ClickHouse类型对照表
 
+写入 ClickHouse 之前需要通过 Filter 中的 `SQL` 或者 `Convert` 插件将各字段转换为对应格式，否则会产生报错。
+
+以下为转换目标类型对照表(未列出的类型暂不支持)：
 
 |ClickHouse字段类型|Convert插件转化目标类型|SQL转化表达式| Description |
 | :---: | :---: | :---:| :---:|
