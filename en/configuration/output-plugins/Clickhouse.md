@@ -103,7 +103,6 @@ ClickHouse {
     host = "localhost:8123"
     database = "nginx"
     table = "access_msg"
-    local_table = "access_msg_local"
     cluster = "no_replica_cluster"
     fields = ["date", "datetime", "hostname", "http_code", "data_size", "ua", "request_time"]
 }
