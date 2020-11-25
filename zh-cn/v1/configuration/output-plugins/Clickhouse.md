@@ -22,7 +22,6 @@
 | [retry](#retry-number) | number| no |1|
 | [retry_codes](#password-array) | array | no |[ ]|
 | [table](#table-string) | string | yes |-|
-| [local_table](#local_table-string) | string | no |${table}_local|
 | [username](#username-string) | string | no |-|
 | [common-options](#common-options-string)| string | no | - |
 
@@ -64,10 +63,6 @@ ClickHouse用户密码，仅当ClickHouse中开启权限时需要此字段。
 ##### table [string]
 
 ClickHouse 表名
-
-##### local_table [string]
-
-分布式表的本地表表名，默认为`${table}_local`，在使用分布式表时会自动根据`sharding key`做数据切分，将数据插入到本地表中。
 
 ##### username [string]
 
@@ -148,9 +143,8 @@ ClickHouse {
     host = "localhost:8123"
     database = "nginx"
     table = "access_msg"
-    local_table = "access_msg_local"
     cluster = "no_replica_cluster"
     fields = ["date", "datetime", "hostname", "http_code", "data_size", "ua", "request_time"]
 }
 ```
-> 根据提供的cluster名称，会从system.clusters表里面获取当前table实际分布在那些节点上。并且根据表的DDL语句获取`sharding key`，然后根据`sharding key`做重新分区（如果存在sharding key）。写入过程中会直接写入到本地表中，而不是分布式表中，这样可以避免ClickHouse的二次网络传输。
+> 根据提供的`cluster`名称，会从`system.clusters`表里面获取当前表主节点实际分布在那些节点上（不包括备份节点，数据备份由Clickhouse内部通过zookeeper实现）。会根据表的DDL判断插入的表是否使用了`Distributed`引擎，即分片表。对于未分片表随机选择一个节点插入，如果使用分片表则自动向分片表代理的本地表执行插入。

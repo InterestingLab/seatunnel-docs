@@ -20,7 +20,6 @@ Write Rows to ClickHouse via [Clickhouse-jdbc](https://github.com/yandex/clickho
 | [host](#host-string) | string | yes |-|
 | [password](#password-string) | string | no |-|
 | [table](#table-string) | string | yes |-|
-| [local_table](#local_table-string) | string | no |${table}_local|
 | [username](#username-string) | string | no |-|
 
 #### bulk_size [number]
@@ -50,10 +49,6 @@ ClickHouse password, only used when ClickHouse has authority authentication.
 ##### table [string]
 
 ClickHouse table name.
-
-##### local_table [string]
-
-ClickHouse Distributed engine remote table name.  default is `${table}_local`, if table use `Distributed ` engine, will insert data to each remote table.
 
 ##### username [string]
 
@@ -113,4 +108,4 @@ ClickHouse {
     fields = ["date", "datetime", "hostname", "http_code", "data_size", "ua", "request_time"]
 }
 ```
-> Query system.clusters table info, find out which physic shard node store the table. get the `sharding key` from table DDL, and repartition by the sharding key(if sharding key exist). Writes to remote Table instead of distributed table, the selection strategy is consistent with Clickhouse's own strategy.
+> Query `system.clusters` table info, find out which physic shard node store the table(backup nodes are not included. data backup is implemented internally by Clickhouse through ZooKeeper). from the table DDL judge the table engine is `Distributed` or not. If not, randomly select a node to insert, otherwise the insert is automatically to the remote table 
