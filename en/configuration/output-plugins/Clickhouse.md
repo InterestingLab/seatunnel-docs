@@ -108,3 +108,5 @@ ClickHouse {
 }
 ```
 > Query `system.clusters` table info, find out which physic shard node store the table(backup nodes are not included. data backup is implemented internally by Clickhouse through ZooKeeper). from the table DDL judge the table engine is `Distributed` or not. If not, randomly select a node to insert, otherwise the insert is automatically to the remote table 
+
+Note: now `intHash` is not supported as sharding strategy.
