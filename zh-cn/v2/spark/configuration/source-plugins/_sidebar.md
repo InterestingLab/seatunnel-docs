@@ -26,6 +26,8 @@
       
       - [FakeStream](/zh-cn/v2/spark/configuration/source-plugins/FakeStream.md)
 
+      - [Hive](/zh-cn/v2/spark/configuration/source-plugins/Hive.md)
+
       - [JDBC](/zh-cn/v2/spark/configuration/source-plugins/Jdbc.md)
 
       - [KafkaStream](/zh-cn/v2/spark/configuration/source-plugins/KafkaStream.md)
