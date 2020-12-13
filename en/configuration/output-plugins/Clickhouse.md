@@ -107,4 +107,6 @@ ClickHouse {
     fields = ["date", "datetime", "hostname", "http_code", "data_size", "ua", "request_time"]
 }
 ```
-> Query system.clusters table info, find out which physic shard node store the table. The single spark partition would only write to a certain ClickHouse node using random policy. 
+> According to the configuration of the distributed table, get the cluster name, local table name, and sharding strategy of the distributed table,  then get the actual distribution of the `local_table` from the `system.clusters` table . Re-partition according to the sharding strategy, and the data of each partition will be written to the corresponding local table
+
+Note: now only support `rand()`  and special field of Number type. not support `intHash` strategy.

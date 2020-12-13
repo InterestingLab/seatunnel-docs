@@ -147,4 +147,6 @@ ClickHouse {
     fields = ["date", "datetime", "hostname", "http_code", "data_size", "ua", "request_time"]
 }
 ```
-> 根据提供的cluster名称，会从system.clusters表里面获取当前table实际分布在那些节点上。单spark partition的数据会根据随机策略选择某一个ClickHouse节点执行具体的写入操作
+> 根据分布式表的配置，获取分布式表的集群名称，本地表名称，切片策略，然后从`system.clusters`表里面获取`local_table`实际分布在哪些节点上。根据切片策略重新进行分区，每个分区的数据会写入到对应的本地表中。
+
+注意：暂不支持使用`intHash`策略进行切片，目前支持的有随机和指定字段。
