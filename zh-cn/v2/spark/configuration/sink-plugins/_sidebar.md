@@ -31,8 +31,12 @@
       - [Elasticsearch](/zh-cn/v2/spark/configuration/sink-plugins/Elasticsearch.md)
       
       - [File](/zh-cn/v2/spark/configuration/sink-plugins/File.md)
+
+      - [HBase](/zh-cn/v2/spark/configuration/sink-plugins/Hbase.md)
   
-      - [Hdfs](/zh-cn/v2/spark/configuration/sink-plugins/Hdfs.md)
+      - [Hdfs](/zh-cn/v2/spark/configuration/sink-plugins/Hdfs.md) 
+      
+      - [MySQL](/zh-cn/v2/spark/configuration/sink-plugins/Mysql.md)
       
       - [Phoenix](/zh-cn/v2/spark/configuration/sink-plugins/Phoenix.md)
 
