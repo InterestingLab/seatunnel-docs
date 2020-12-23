@@ -8,7 +8,7 @@
 | 开发Spark插件 | Yes | Yes |
 | 支持Flink | No | Yes |
 | 开发Flink插件 | No | Yes |
-| 支持的Waterdrop运行模式 | local, Spark/Flink Standalone Cluster, on Yarn, on k8s | local, Spark/Flink Standalone Cluster, on Yarn, on k8s |
+| 支持的Waterdrop运行模式 | local, Spark Standalone Cluster, on Yarn, on k8s | local, Spark/Flink Standalone Cluster, on Yarn, on k8s |
 | 支持SQL计算 | Yes | Yes |
 | 配置文件动态变量替换 | Yes | Yes |
 | 项目代码编译方式 | sbt(下载依赖很困难，我们正式放弃sbt) | maven |
