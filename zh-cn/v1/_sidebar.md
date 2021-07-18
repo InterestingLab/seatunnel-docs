@@ -14,7 +14,7 @@
 
 - [部署与运行](/zh-cn/v1/deployment)
 
-- [监控[商业版]](/zh-cn/v1/monitoring)
+- [监控](/zh-cn/v1/monitoring)
 
 - [插件开发](/zh-cn/v1/developing-plugin)
 

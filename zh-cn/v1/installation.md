@@ -6,18 +6,6 @@
 
 https://github.com/InterestingLab/waterdrop/releases
 
-### 商业版本（Enterprise）
-
-https://pan.baidu.com/s/15y4OcpXIumahiaYM0x6oiw
-
-商业合作、咨询、购买以及产品支持，请联系：
-```
-公司：北京奥龙信科技有限公司
-产品：Waterdrop
-商务合作联系人：高先生
-联系电话：18801136525
-邮箱：garygaowork@gmail.com
-```
 ## 环境准备
 
 ### 准备好JDK1.8
