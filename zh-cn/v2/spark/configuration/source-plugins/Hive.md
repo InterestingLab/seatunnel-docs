@@ -30,7 +30,7 @@
 ```
 # Waterdrop 配置文件中的spark section中：
 
-spark {
+env {
   ...
   spark.sql.catalogImplementation = "hive"
   ...
@@ -42,7 +42,7 @@ spark {
 ### Example
 
 ```
-spark {
+env {
   ...
   spark.sql.catalogImplementation = "hive"
   ...
