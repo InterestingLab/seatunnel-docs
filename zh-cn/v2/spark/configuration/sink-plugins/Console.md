@@ -32,7 +32,7 @@
 ### Examples
 
 ```
-stdout {
+console {
     limit = 10
     serializer = "json"
 }
