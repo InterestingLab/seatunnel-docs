@@ -61,6 +61,7 @@
     - [Elasticsearch](/zh-cn/v1/configuration/output-plugins/Elasticsearch)
     - [File](/zh-cn/v1/configuration/output-plugins/File)
     - [Hdfs](/zh-cn/v1/configuration/output-plugins/Hdfs)
+    - [Hive](/zh-cn/v1/configuration/output-plugins/Hive)
     - [Jdbc](/zh-cn/v1/configuration/output-plugins/Jdbc)
     - [Kafka](/zh-cn/v1/configuration/output-plugins/Kafka)
     - [Kudu](/zh-cn/v1/configuration/output-plugins/Kudu)
