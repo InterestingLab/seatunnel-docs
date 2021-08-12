@@ -17,6 +17,7 @@
 | [key_pattern](#key_pattern-string) | string | yes | - |
 | [partition](#partition-int) | int | no | 3 |
 | [db_num](#db_num-int) | int | no | 0 |
+| [auth](#auth-string) | string | no | - |
 | [common-options](#common-options-string)| string | yes | - |
 
 
@@ -39,6 +40,10 @@ Redis分片数量. 默认为3
 ##### db_num [int]
 
 Redis数据库索引标识. 默认连接到db0. 
+
+##### auth [string]
+
+redis 鉴权密码
 
 ##### common options [string]
 
