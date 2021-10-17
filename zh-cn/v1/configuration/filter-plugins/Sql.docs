@@ -3,7 +3,7 @@
 @pluginName Sql
 @pluginDesc "在原始数据集Dataframe的基础上执行SQL"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption string table="-" no "表名，可为任意字符串"

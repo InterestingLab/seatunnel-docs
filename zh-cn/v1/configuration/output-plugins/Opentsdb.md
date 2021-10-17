@@ -1,7 +1,7 @@
 ## Output plugin : Opentsdb
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/waterdrop
+* Homepage: https://interestinglab.github.io/earth-fleet-docs
 * Version: 1.3.0
 
 ### Description

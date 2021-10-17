@@ -1,7 +1,7 @@
 ## Filter plugin : Truncate
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/waterdrop
+* Homepage: https://interestinglab.github.io/earth-fleet-docs
 * Version: 1.0.0
 
 ### Description

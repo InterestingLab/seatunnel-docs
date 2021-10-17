@@ -3,7 +3,7 @@
 @pluginName Mysql
 @pluginDesc "输出数据到MySQL"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption string url="-" yes ""

@@ -3,7 +3,7 @@
 @pluginName S3
 @pluginDesc "从S3云存储上读取原始数据"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption

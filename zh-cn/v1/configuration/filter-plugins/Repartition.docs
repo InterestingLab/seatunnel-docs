@@ -3,7 +3,7 @@
 @pluginName Repartition
 @pluginDesc "重新给Dataframe分区"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption number num_partitions="-" yes "分区个数"

@@ -3,7 +3,7 @@
 @pluginName Kv
 @pluginDesc "提取指定字段所有的Key-Value, 常用于解析url参数中的key和value"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption string field_split="&" no "字段分隔符"

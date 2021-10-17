@@ -3,7 +3,7 @@
 @pluginName Grok
 @pluginDesc "对指定字段进行正则解析"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption string pattern="" yes "正则表达式"

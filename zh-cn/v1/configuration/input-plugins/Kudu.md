@@ -1,7 +1,7 @@
 ## Input plugin : Kudu
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/waterdrop
+* Homepage: https://interestinglab.github.io/earth-fleet-docs
 * Version: 1.1.2
 
 ### Description

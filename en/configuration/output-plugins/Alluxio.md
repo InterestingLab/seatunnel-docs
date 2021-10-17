@@ -1,7 +1,7 @@
 ## Output plugin : Alluxio
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/waterdrop
+* Homepage: https://interestinglab.github.io/earth-fleet-docs
 * Version: 1.5.0
 
 ### Description

@@ -1,7 +1,7 @@
 ## Input plugin : Hdfs
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/waterdrop
+* Homepage: https://interestinglab.github.io/earth-fleet-docs
 * Version: 1.1.0
 
 ### Description

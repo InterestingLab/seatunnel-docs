@@ -3,7 +3,7 @@
 @pluginName Sample
 @pluginDesc "对原始数据集进行抽样"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption number fraction="0.1" no "数据采样的比例，例如fraction=0.8，就是抽取其中80%的数据"
