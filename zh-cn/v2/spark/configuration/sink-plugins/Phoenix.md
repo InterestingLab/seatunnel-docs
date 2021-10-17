@@ -1,7 +1,7 @@
 ## Sink plugin : Phoenix [Spark]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/waterdrop
+* Homepage: https://interestinglab.github.io/earth-fleet-docs
 * Version: 2.0.0
 
 ### Description

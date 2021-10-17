@@ -84,7 +84,7 @@ source {
 
 
   # If you would like to get more information about how to configure waterdrop and see full list of source plugins,
-  # please go to https://interestinglab.github.io/waterdrop/#/zh-cn/configuration/base
+  # please go to https://interestinglab.github.io/earth-fleet-docs/#/zh-cn/configuration/base
 }
 
 transform {
@@ -94,7 +94,7 @@ transform {
   }
 
   # If you would like to get more information about how to configure waterdrop and see full list of transform plugins,
-  # please go to https://interestinglab.github.io/waterdrop/#/zh-cn/configuration/base
+  # please go to https://interestinglab.github.io/earth-fleet-docs/#/zh-cn/configuration/base
 }
 
 sink {
@@ -102,7 +102,7 @@ sink {
 
 
   # If you would like to get more information about how to configure waterdrop and see full list of sink plugins,
-  # please go to https://interestinglab.github.io/waterdrop/#/zh-cn/configuration/base
+  # please go to https://interestinglab.github.io/earth-fleet-docs/#/zh-cn/configuration/base
 }
 ```
 

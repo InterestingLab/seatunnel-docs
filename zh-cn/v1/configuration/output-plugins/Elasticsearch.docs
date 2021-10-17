@@ -3,7 +3,7 @@
 @pluginName Elasticsearch
 @pluginDesc "输出Dataframe到Elasticsearch"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption array hosts="-" yes "Elasticsearch集群地址，格式为host:port"

@@ -3,7 +3,7 @@
 @pluginName MongoDB
 @pluginDesc "写入数据到[MongoDB](https://www.mongodb.com/)"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption

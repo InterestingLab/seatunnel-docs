@@ -3,7 +3,7 @@
 @pluginName Clickhouse
 @pluginDesc "输出Row到Clickhouse"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption array fields="" yes ""

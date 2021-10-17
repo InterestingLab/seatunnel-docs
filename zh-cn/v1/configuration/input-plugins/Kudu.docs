@@ -3,7 +3,7 @@
 @pluginName Kudu
 @pluginDesc "从[Apache Kudu](https://kudu.apache.org) 表中读取数据"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption

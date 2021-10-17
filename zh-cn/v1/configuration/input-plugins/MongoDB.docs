@@ -3,7 +3,7 @@
 @pluginName MongoDB
 @pluginDesc "从[MongoDB](https://www.mongodb.com/)读取数据"
 @pluginAuthor InterestingLab
-@pluginHomepage https://interestinglab.github.io/waterdrop
+@pluginHomepage https://interestinglab.github.io/earth-fleet-docs
 @pluginVersion 1.0.0
 
 @pluginOption
