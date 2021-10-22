@@ -1,7 +1,7 @@
 ## Output plugin : Clickhouse
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.1.0
 
 ### Description

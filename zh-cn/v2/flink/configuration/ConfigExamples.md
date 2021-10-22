@@ -7,7 +7,7 @@
 
 ```
 ######
-###### This config file is a demonstration of streaming processing in waterdrop config
+###### This config file is a demonstration of streaming processing in seatunnel config
 ######
 
 env {
@@ -24,8 +24,8 @@ source {
       field_name = "name,age"
     }
 
-  # If you would like to get more information about how to configure waterdrop and see full list of source plugins,
-  # please go to https://interestinglab.github.io/earth-fleet-docs/#/zh-cn/configuration/base
+  # If you would like to get more information about how to configure seatunnel and see full list of source plugins,
+  # please go to https://interestinglab.github.io/seatunnel-docs/#/zh-cn/configuration/base
 }
 
 transform {
@@ -33,15 +33,15 @@ transform {
       sql = "select name,age from fake"
     }
 
-  # If you would like to get more information about how to configure waterdrop and see full list of transform plugins,
-  # please go to https://interestinglab.github.io/earth-fleet-docs/#/zh-cn/configuration/base
+  # If you would like to get more information about how to configure seatunnel and see full list of transform plugins,
+  # please go to https://interestinglab.github.io/seatunnel-docs/#/zh-cn/configuration/base
 }
 
 sink {
   ConsoleSink {}
 
 
-  # If you would like to get more information about how to configure waterdrop and see full list of sink plugins,
-  # please go to https://interestinglab.github.io/earth-fleet-docs/#/zh-cn/configuration/base
+  # If you would like to get more information about how to configure seatunnel and see full list of sink plugins,
+  # please go to https://interestinglab.github.io/seatunnel-docs/#/zh-cn/configuration/base
 }
 ```

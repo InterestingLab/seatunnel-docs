@@ -1,7 +1,7 @@
 ## Filter plugin : Watermark
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.3.0
 
 ### Description

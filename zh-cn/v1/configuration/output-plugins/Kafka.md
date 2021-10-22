@@ -1,7 +1,7 @@
 ## Output plugin : Kafka
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
@@ -63,7 +63,7 @@ Kafka Topic
 
 ```
 kafka {
-    topic = "waterdrop"
+    topic = "seatunnel"
     producer.bootstrap.servers = "localhost:9092"
 }
 ```
@@ -71,7 +71,7 @@ kafka {
 
 ```
 kafka {
-    topic = "waterdrop"
+    topic = "seatunnel"
     producer.bootstrap.servers = "localhost:9092"
     streaming_output_mode = "update"
     checkpointLocation = "/your/path"

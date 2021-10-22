@@ -1,10 +1,10 @@
-## start-waterdrop-spark.sh 使用方法
+## start-seatunnel-spark.sh 使用方法
 
 
 ### 使用说明
 
 ```bash
- bin/start-waterdrop-spark.sh -c config-path -m master -e deploy-mode -i city=beijing
+ bin/start-seatunnel-spark.sh -c config-path -m master -e deploy-mode -i city=beijing
 ```
 
 > 使用 `-c` 或者 `--config`来指定配置文件的路径
@@ -20,8 +20,8 @@
 
 ```
 # Yarn client 模式
-./bin/start-waterdrop-spark.sh --master yarn --deploy-mode client --config ./config/application.conf
+./bin/start-seatunnel-spark.sh --master yarn --deploy-mode client --config ./config/application.conf
 
 # Yarn cluster 模式
-./bin/start-waterdrop-spark.sh --master yarn --deploy-mode cluster --config ./config/application.conf
+./bin/start-seatunnel-spark.sh --master yarn --deploy-mode cluster --config ./config/application.conf
 ```

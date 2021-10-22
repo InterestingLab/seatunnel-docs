@@ -1,7 +1,7 @@
 ## Input plugin : TiDB
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.1.5
 
 ### Description
@@ -32,9 +32,9 @@ TiDB库名
 ### Example
 
 
-使用TiDB Input必须在`spark-defaults.conf`或者Waterdrop配置文件中配置`spark.tispark.pd.addresses`和`spark.sql.extensions`。
+使用TiDB Input必须在`spark-defaults.conf`或者seatunnel配置文件中配置`spark.tispark.pd.addresses`和`spark.sql.extensions`。
 
-一个Waterdrop读取TiDB数据的配置文件如下：
+一个seatunnel读取TiDB数据的配置文件如下：
 
 ```
 spark {

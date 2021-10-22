@@ -1,7 +1,7 @@
 ## Transform plugin : Json [Spark]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 2.0.0
 
 ### Description
@@ -29,7 +29,7 @@
 
 ##### schema_dir [string]
 
-样式目录，若不配置默认为`$WaterdropRoot/plugins/json/files/schemas/`
+样式目录，若不配置默认为`$seatunnelRoot/plugins/json/files/schemas/`
 
 ##### schema_file [string]
 
@@ -160,7 +160,7 @@
     
 * **Schema**
     
-    在 Driver Node 的 `~/waterdrop/plugins/json/files/schemas/demo.json` 中放置内容如下：
+    在 Driver Node 的 `~/seatunnel/plugins/json/files/schemas/demo.json` 中放置内容如下：
     
     ```json
     {

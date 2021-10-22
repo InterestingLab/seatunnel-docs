@@ -12,22 +12,22 @@ you can submit Spark application on client mode without any Spark configuration.
 If you want to launch applications on a cluster, please refer to the official documents of [Deploying Spark](http://spark.apache.org/docs/latest/cluster-overview.html).
 
 
-### Step 2: Download Waterdrop
+### Step 2: Download seatunnel
 
-Download [Waterdrop](https://github.com/InterestingLab/waterdrop/releases) and extract it.
-
-```
-# Take waterdrop 1.1.0 as an example:
-
-wget https://github.com/InterestingLab/waterdrop/releases/download/v1.1.0/waterdrop-1.1.0.zip -O waterdrop-1.1.0.zip
-unzip waterdrop-1.1.0.zip
-ln -s waterdrop-1.1.0 waterdrop
+Download [seatunnel](https://github.com/InterestingLab/seatunnel/releases) and extract it.
 
 ```
+# Take seatunnel 1.1.0 as an example:
 
-### Step 3: Waterdrop Configuration
+wget https://github.com/InterestingLab/seatunnel/releases/download/v1.1.0/seatunnel-1.1.0.zip -O seatunnel-1.1.0.zip
+unzip seatunnel-1.1.0.zip
+ln -s seatunnel-1.1.0 seatunnel
 
-Edit `config/waterdrop-env.sh`, specify the necessary environment configuration, 
+```
+
+### Step 3: seatunnel Configuration
+
+Edit `config/seatunnel-env.sh`, specify the necessary environment configuration, 
 such as `SPARK_HOME` (the path of Spark folder in Step 1)
 
 Edit `config/application.conf`, which determines how to build processing pipeline, 
@@ -35,10 +35,10 @@ including receiving, transforming and output data.
 
 ```
 spark {
-  # Waterdrop defined streaming batch duration in seconds
+  # seatunnel defined streaming batch duration in seconds
   spark.streaming.batchDuration = 5
 
-  spark.app.name = "Waterdrop"
+  spark.app.name = "seatunnel"
   spark.ui.port = 13000
 }
 
@@ -70,11 +70,11 @@ nc -l -p 9999
 ```
 
 
-### Step 5: Running Waterdrop
+### Step 5: Running seatunnel
 
 ```
-cd waterdrop
-./bin/start-waterdrop.sh --master local[4] --deploy-mode client --config ./config/application.conf
+cd seatunnel
+./bin/start-seatunnel.sh --master local[4] --deploy-mode client --config ./config/application.conf
 
 ```
 
@@ -84,7 +84,7 @@ cd waterdrop
 Hello World, Gary
 ```
 
-The output of Waterdrop is: 
+The output of seatunnel is: 
 
 ```
 +-----------------+-----------+----+
@@ -97,7 +97,7 @@ The output of Waterdrop is:
 
 ### Conclusion
 
-Waterdrop is easy to use and there are rich data processing capabilities waiting to be discovered.
+seatunnel is easy to use and there are rich data processing capabilities waiting to be discovered.
 The data processing example presented in this page does not require any code work, 
 compilation or packaging. 
 It is much more simpler than Spark [Quick Example](https://spark.apache.org/docs/latest/streaming-programming-guide.html#a-quick-example).

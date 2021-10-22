@@ -1,7 +1,7 @@
 ## Filter plugin : Table
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
@@ -54,7 +54,7 @@ After loading the file, it will be registered as a table. Here, the table name i
 ```
 table {
     table_name = "mydict"
-    path = "/user/waterdrop/mylog/a.txt"
+    path = "/user/seatunnel/mylog/a.txt"
     fields = ['city', 'population']
 }
 ```
@@ -64,7 +64,7 @@ table {
 ```
 table {
     table_name = "mydict"
-    path = "/user/waterdrop/mylog/a.txt"
+    path = "/user/seatunnel/mylog/a.txt"
     fields = ['city', 'population']
     field_types = ['string', 'long']
 }

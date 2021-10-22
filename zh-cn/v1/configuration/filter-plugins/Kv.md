@@ -1,7 +1,7 @@
 ## Filter plugin : Kv
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
@@ -27,7 +27,7 @@
 
 指定kv默认值，格式为 `key=defalut_value`, key与value之间使用`=`分割，可以指定多个，举例:
 
-`default_values = ["mykey1=123", "mykey2=waterdrop"]`
+`default_values = ["mykey1=123", "mykey2=seatunnel"]`
 
 ##### exclude_fields [array]
 

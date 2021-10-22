@@ -1,7 +1,7 @@
 ## Filter plugin : UrlEncode
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.5.0
 
 ### Description

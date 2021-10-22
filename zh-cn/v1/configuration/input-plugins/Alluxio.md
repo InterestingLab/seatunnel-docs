@@ -1,7 +1,7 @@
 ## Input plugin : Alluxio [Static]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.1.0
 
 ### Description
@@ -44,7 +44,7 @@ Alluxio内存文件路径，以alluxio://开头
 
 ### Note 
 
-如果使用zookeeper控制alluxio，请将以下语句加入到start-waterdrop.sh中
+如果使用zookeeper控制alluxio，请将以下语句加入到start-seatunnel.sh中
 
 ```
 driverJavaOpts="-Dalluxio.user.file.writetype.default=CACHE_THROUGH -Dalluxio.zookeeper.address=your.zookeeper.address:zookeeper.port -Dalluxio.zookeeper.enabled=true"
@@ -62,13 +62,13 @@ spark.executorJavaOpts="-Dalluxio.user.file.writetype.default=CACHE_THROUGH -Dal
 
 ```
 alluxio {
-    path = "alluxio:///var/waterdrop-logs"
+    path = "alluxio:///var/seatunnel-logs"
     result_table_name = "access_log"
     format = "json"
 }
 ```
 
-> 从Alluxio中读取json文件，加载到waterdrop中待后续处理.
+> 从Alluxio中读取json文件，加载到seatunnel中待后续处理.
 
 
 或者可以指定 alluxio name service:
@@ -76,7 +76,7 @@ alluxio {
 ```
 alluxio {
     result_table_name = "access_log"
-    path = "alluxio://m2:19999/waterdrop-logs/access.log"
+    path = "alluxio://m2:19999/seatunnel-logs/access.log"
 }
 ```
 
@@ -86,7 +86,7 @@ alluxio {
 ```
 alluxio {
     result_table_name = "books"
-    path = "alluxio://m2:19999/waterdrop-logs/books.xml"
+    path = "alluxio://m2:19999/seatunnel-logs/books.xml"
     options.rowTag = "book"
     format = "xml"
 }

@@ -1,7 +1,7 @@
 ## Input plugin : Hdfs [Static]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.1.0
 
 ### Description
@@ -48,13 +48,13 @@ Hadoop集群文件路径，以hdfs://开头
 
 ```
 hdfs {
-    path = "hdfs:///var/waterdrop-logs"
+    path = "hdfs:///var/seatunnel-logs"
     result_table_name = "access_log"
     format = "json"
 }
 ```
 
-> 从HDFS中读取json文件，加载到waterdrop中待后续处理.
+> 从HDFS中读取json文件，加载到seatunnel中待后续处理.
 
 
 或者可以指定 hdfs name service:
@@ -62,7 +62,7 @@ hdfs {
 ```
 hdfs {
     result_table_name = "access_log"
-    path = "hdfs://m2:8022/waterdrop-logs/access.log"
+    path = "hdfs://m2:8022/seatunnel-logs/access.log"
 }
 ```
 
@@ -71,7 +71,7 @@ hdfs {
 ```
 hdfs {
     result_table_name = "books"
-    path = "hdfs://m2:8022/waterdrop-logs/books.xml"
+    path = "hdfs://m2:8022/seatunnel-logs/books.xml"
     options.rowTag = "book"
     format = "xml"
 }
@@ -81,7 +81,7 @@ hdfs {
 
 ```
 hdfs {
-    path = "hdfs://m2:8022/waterdrop-logs/books.csv"
+    path = "hdfs://m2:8022/seatunnel-logs/books.csv"
     format = "csv"
     # 将第一列的header作为列名
     # 否则将以 _c0,_c1,_c2...依次命名

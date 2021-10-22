@@ -1,7 +1,7 @@
 ## Output plugin : Elasticsearch
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
@@ -16,7 +16,7 @@ Write Rows to Elasticsearch. Support Elasticsearch >= 2.X
 | [hosts](#hosts-array) | array | yes | - |
 | [index_type](#index_type-string) | string | no | log |
 | [index_time_format](#index_time_format-string) | string | no | yyyy.MM.dd |
-| [index](#index-string) | string | no | waterdrop |
+| [index](#index-string) | string | no | seatunnel |
 | [es](#es-string) | string | no | - |
 
 ##### hosts [array]
@@ -44,7 +44,7 @@ The detailed time format syntax:[Java SimpleDateFormat](https://docs.oracle.com/
 
 ##### index [string]
 
-Elasticsearch index name, if you want to generate index based on time, you need to specify the field like `waterdrop-${now}`. `now` means current time.
+Elasticsearch index name, if you want to generate index based on time, you need to specify the field like `seatunnel-${now}`. `now` means current time.
 
 
 ##### es.* [string]
@@ -59,19 +59,19 @@ The way to specify parameters is to use the prefix "es" before the parameter. Fo
 ```
 elasticsearch {
     hosts = ["localhost:9200"]
-    index = "waterdrop"
+    index = "seatunnel"
 }
 ```
 
-> Index name is `waterdrop`
+> Index name is `seatunnel`
 
 ```
 elasticsearch {
     hosts = ["localhost:9200"]
-    index = "waterdrop-${now}"
+    index = "seatunnel-${now}"
     es.batch.size.entries = 100000
     index_time_format = "yyyy.MM.dd"
 }
 ```
 
-> Create index by day. For example: **waterdrop-2017.11.03**
+> Create index by day. For example: **seatunnel-2017.11.03**

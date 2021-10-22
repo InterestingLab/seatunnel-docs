@@ -1,7 +1,7 @@
 ## Input plugin : KafkaStream [Streaming]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.1.0
 
 ### Description
@@ -56,9 +56,9 @@ Spark Structured Streaming 中 Kafka Source 可选参数参考 [Structured Strea
 
 ```
 kafkaStream {
-    topics = "waterdrop"
+    topics = "seatunnel"
     consumer.bootstrap.servers = "localhost:9092"
-    consumer.group.id = "waterdrop_group"
+    consumer.group.id = "seatunnel_group"
 }
 ```
 
@@ -66,9 +66,9 @@ kafkaStream {
 
 ```
 kafkaStream {
-    topics = "waterdrop"
+    topics = "seatunnel"
     consumer.bootstrap.servers = "localhost:9092"
-    consumer.group.id = "waterdrop_group"
+    consumer.group.id = "seatunnel_group"
     consumer.failOnDataLoss = false
 }
 ```
@@ -77,9 +77,9 @@ kafkaStream {
 如下
 ```
 kafkaStream {
-    topics = "waterdrop"
+    topics = "seatunnel"
     consumer.bootstrap.servers = "localhost:9092"
-    consumer.group.id = "waterdrop_group"
+    consumer.group.id = "seatunnel_group"
     consumer.rebalance.max.retries = 100
     consumer.failOnDataLoss = false
     schema = "{\"name\":\"string\",\"age\":\"integer\",\"addrs\":{\"country\":\"string\",\"city\":\"string\"}}"

@@ -1,6 +1,6 @@
 # Guardian
 
-[Guardian](https://github.com/InterestingLab/guardian)是Waterdrop的子项目，是一个监控和报警工具，可以提供Waterdrop的存活情况监控以及调度延迟情况监控。Guardian能够在运行时动态加载配置文件，并提供HTTP API支持配置的实时修改。目前仅支持Waterdrop on Yarn.
+[Guardian](https://github.com/InterestingLab/guardian)是seatunnel的子项目，是一个监控和报警工具，可以提供seatunnel的存活情况监控以及调度延迟情况监控。Guardian能够在运行时动态加载配置文件，并提供HTTP API支持配置的实时修改。目前仅支持seatunnel on Yarn.
 
 ## 运行Guardian
 
@@ -75,7 +75,7 @@ api_hosts: <list>
 ```
 "apps": [
     {
-        "app_name": "waterdrop-app",
+        "app_name": "seatunnel-app",
         "start_cmd": "test_cmd",
         "app_num": 1,
         "check_type": "spark",
@@ -165,7 +165,7 @@ Gaurdian调用接口的时候会以下面JSON格式发送HTTP POST请求到配�
 ```
 {
     "subject": "Guardian",
-    "objects": "Waterdrop_app",
+    "objects": "seatunnel_app",
     "content": "App is not running or less than expected number of running instance, will restart"
 }
 ```
@@ -197,11 +197,11 @@ N/A
 #### 返回结果
 
 ```
-curl 'http://localhost:5000/config/waterdrop-app2'
+curl 'http://localhost:5000/config/seatunnel-app2'
 
 {
   "content": {
-    "app_name": "waterdrop-app2",
+    "app_name": "seatunnel-app2",
     "app_num": 1,
     "check_options": {},
     "check_type": "spark",
@@ -240,7 +240,7 @@ curl 'http://localhost:5000/config/waterdrop-app2'
 #### 返回结果
 
 ```
-curl 'http://localhost:5000/config/waterdrop-app2' -d '
+curl 'http://localhost:5000/config/seatunnel-app2' -d '
 {
     'active': false
 }'
@@ -273,7 +273,7 @@ N/A
 #### 返回结果
 
 ```
-curl -XDELETE 10.212.81.56:5000/config/waterdrop-app2
+curl -XDELETE 10.212.81.56:5000/config/seatunnel-app2
 
 {
   "status": 0

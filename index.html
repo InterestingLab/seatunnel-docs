@@ -17,12 +17,12 @@
     loadSidebar: true,
     loadNavbar: true,
     coverpage: true,
-    repo: 'https://github.com/InterestingLab/waterdrop/',
-    name: 'Waterdrop',
+    repo: 'https://github.com/InterestingLab/seatunnel/',
+    name: 'seatunnel',
     plugins: [
       function(hook, vm) {
         hook.beforeEach(function (html) {
-          var url = 'https://github.com/InterestingLab/waterdrop-docs/blob/master/' + vm.route.file
+          var url = 'https://github.com/InterestingLab/seatunnel-docs/blob/master/' + vm.route.file
           var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
 
           return editHtml
@@ -52,7 +52,7 @@
     const gitalk = new Gitalk({
         clientID: 'c422ca57da0be032bf4b',
         clientSecret: 'b3668a03e69c36b5374580fc38975f977d76c0f4',
-        repo: 'waterdrop',
+        repo: 'seatunnel',
         owner: 'interestinglab',
         admin: ['garyelephant', 'RickyHuo'],
         // facebook-like distraction free mode

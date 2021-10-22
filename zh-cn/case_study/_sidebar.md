@@ -10,7 +10,7 @@
  - [如何快速地将Hive中的数据导入ClickHouse](/zh-cn/case_study/2.md)
  - [如何使用Spark快速将数据写入Elasticsearch](/zh-cn/case_study/3.md)
  - [优秀的数据工程师，怎么用Spark在TiDB上做OLAP分析](/zh-cn/case_study/4.md)
- - [Waterdrop中StructuredStreaming怎么用](/zh-cn/case_study/5.md)
+ - [seatunnel中StructuredStreaming怎么用](/zh-cn/case_study/5.md)
 
 - [配置](/zh-cn/v1/configuration/base)
 
@@ -20,7 +20,7 @@
 
 - [插件开发](/zh-cn/v1/developing-plugin)
 
-- [深入Waterdrop](/zh-cn/v1/internal)
+- [深入seatunnel](/zh-cn/v1/internal)
 
 - [Roadmap](/zh-cn/v1/roadmap)
 

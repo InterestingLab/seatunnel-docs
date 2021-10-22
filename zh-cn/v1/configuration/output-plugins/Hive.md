@@ -1,7 +1,7 @@
 # Output plugin : **Hive**
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.5.1
 
 ### Description
@@ -50,7 +50,7 @@ hive分区
 ```conf
 output {
   Hive {
-    sql = "insert overwrite table waterdrop.test1 partition(province) select name,age,province from myTable2"
+    sql = "insert overwrite table seatunnel.test1 partition(province) select name,age,province from myTable2"
   }
 }
 ```
@@ -63,7 +63,7 @@ output {
 output {
   Hive {
     source_table_name = "myTable2"
-    result_table_name = "waterdrop.test1"
+    result_table_name = "seatunnel.test1"
     save_mode = "overwrite"
     sink_columns = "name,age,province"
     partition_by = ["province"]
