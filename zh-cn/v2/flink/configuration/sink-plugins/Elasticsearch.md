@@ -1,7 +1,7 @@
 ## Sink plugin : Elasticsearch [Flink]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 2.0.0
 
 ### Description
@@ -15,7 +15,7 @@
 | [hosts](#hosts-array) | array | yes | - |
 | [index_type](#index_type-string) | string | no | log |
 | [index_time_format](#index_time_format-string) | string | no | yyyy.MM.dd |
-| [index](#index-string) | string | no | waterdrop |
+| [index](#index-string) | string | no | seatunnel |
 | [common-options](#common-options-string)| string | no | - |
 
 
@@ -45,7 +45,7 @@ Elasticsearch index type
 
 ##### index [string]
 
-Elasticsearch index名称，如果需要根据时间生成index，可以指定时间变量，如：`waterdrop-${now}`。`now`代表当前数据处理的时间。
+Elasticsearch index名称，如果需要根据时间生成index，可以指定时间变量，如：`seatunnel-${now}`。`now`代表当前数据处理的时间。
 
 ##### common options [string]
 
@@ -57,8 +57,8 @@ Elasticsearch index名称，如果需要根据时间生成index，可以指定�
 ```
 elasticsearch {
     hosts = ["localhost:9200"]
-    index = "waterdrop"
+    index = "seatunnel"
 }
 ```
 
-> 将结果写入Elasticsearch集群的名称为 waterdrop 的索引中
+> 将结果写入Elasticsearch集群的名称为 seatunnel 的索引中

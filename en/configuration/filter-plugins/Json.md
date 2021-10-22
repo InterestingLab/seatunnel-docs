@@ -1,7 +1,7 @@
 ## Filter plugin : Json
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
@@ -25,7 +25,7 @@ New field name.
 
 ##### schema_dir [string]
 
-Json schema absolute directory path，default is `$WaterdropRoot/plugins/json/files/schemas/`
+Json schema absolute directory path，default is `$seatunnelRoot/plugins/json/files/schemas/`
 
 ##### schema_file [string]
 
@@ -150,7 +150,7 @@ then the output of topicA and topicB would be：
     
     * **Schema**
     
-    Make the content of `/opt/waterdrop/plugins/json/files/schemas/demo.json` on `Driver node` as below：
+    Make the content of `/opt/seatunnel/plugins/json/files/schemas/demo.json` on `Driver node` as below：
     
     ```json
     {

@@ -1,7 +1,7 @@
 ## Output plugin : Kafka
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
@@ -35,7 +35,7 @@ The way to specify parameters is to use the prefix "producer" before the paramet
 
 ```
 kafka {
-    topic = "waterdrop"
+    topic = "seatunnel"
     producer.bootstrap.servers = "localhost:9092"
 }
 ```

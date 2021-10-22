@@ -1,8 +1,8 @@
-# 为 Waterdrop v2.x 贡献代码
+# 为 seatunnel v2.x 贡献代码
 
 ## Coding Style
 
-Waterdrop v2.x的主要编程语言为：Java，包括流程代码，Flink插件；部分Spark插件仍然沿用v1.x的scala代码。
+seatunnel v2.x的主要编程语言为：Java，包括流程代码，Flink插件；部分Spark插件仍然沿用v1.x的scala代码。
 
 * Java Coding Style 参考：
 
@@ -21,7 +21,7 @@ https://github.com/databricks/scala-style-guide
 
 ## 项目代码编译运行
 
-Waterdrop v2.x 放弃了sbt，改为社区用户期待已久的maven来做项目的管理，国内用户再也不用痛苦于sbt依赖下载很慢的问题了。
+seatunnel v2.x 放弃了sbt，改为社区用户期待已久的maven来做项目的管理，国内用户再也不用痛苦于sbt依赖下载很慢的问题了。
 
 ## 代码/文档贡献流程
 
@@ -40,7 +40,7 @@ Waterdrop v2.x 放弃了sbt，改为社区用户期待已久的maven来做项目
 
 * 非Interesting Lab 成员(常见的github协作流程):
 
-(1) 在Waterdrop主页 fork 这个项目 https://github.com/InterestingLab/waterdrop
+(1) 在seatunnel主页 fork 这个项目 https://github.com/InterestingLab/seatunnel
 
 (2) 开发
 

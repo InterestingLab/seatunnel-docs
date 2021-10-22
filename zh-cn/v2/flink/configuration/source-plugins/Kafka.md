@@ -1,7 +1,7 @@
 ## Source plugin : Kafka [Flink]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 2.0.0
 
 ### Description
@@ -83,7 +83,7 @@ csv格式通过这个参数来设置分隔符等。例如设置列分隔符为\t
 ```
   KafkaTableStream {
     consumer.bootstrap.servers = "127.0.0.1:9092"
-    consumer.group.id = "waterdrop5"
+    consumer.group.id = "seatunnel5"
     topics = test
     result_table_name = test
     format.type = csv

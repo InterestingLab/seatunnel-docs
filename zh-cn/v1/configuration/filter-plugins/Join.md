@@ -1,7 +1,7 @@
 ## Filter plugin : Join
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.3.0
 
 ### Description
@@ -35,7 +35,7 @@
 ```
 input {
   fakestream {
-    content = ["Hello World,Waterdrop"]
+    content = ["Hello World,seatunnel"]
     rate = 1
   }
 

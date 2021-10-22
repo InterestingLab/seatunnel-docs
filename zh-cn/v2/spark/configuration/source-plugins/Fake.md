@@ -1,12 +1,12 @@
 ## Source plugin : Fake [Spark]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 2.0.0
 
 ### Description
 
-`Fake` 主要用于快速上手运行一个 Waterdrop 应用
+`Fake` 主要用于快速上手运行一个 seatunnel 应用
 
 ### Options
 

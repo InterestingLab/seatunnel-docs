@@ -1,7 +1,7 @@
 ## Input plugin : Hive
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.1.2
 
 ### Description
@@ -25,10 +25,10 @@
 `Input` 插件通用参数，详情参照 [Input Plugin](/zh-cn/v1/configuration/input-plugin)
 
 
-**注意：从waterdrop v1.3.4 开始，使用hive input必须做如下配置：**
+**注意：从seatunnel v1.3.4 开始，使用hive input必须做如下配置：**
 
 ```
-# Waterdrop 配置文件中的spark section中：
+# seatunnel 配置文件中的spark section中：
 
 spark {
   ...

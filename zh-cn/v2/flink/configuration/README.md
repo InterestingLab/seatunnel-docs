@@ -1,11 +1,11 @@
-## Waterdrop v2.x For Flink 配置文件
+## seatunnel v2.x For Flink 配置文件
 
 # 通用配置
 
 
 ## 配置文件
 
-一个完整的Waterdrop配置包含`env`, `source`, `transform`, `sink`, 即：
+一个完整的seatunnel配置包含`env`, `source`, `transform`, `sink`, 即：
 
 ```
     env {

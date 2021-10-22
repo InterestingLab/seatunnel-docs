@@ -4,9 +4,9 @@
 
 - [行业应用案例](/zh-cn/case_study/)
 
-- [Waterdrop v2.x For Flink](/zh-cn/v2/flink/)
+- [seatunnel v2.x For Flink](/zh-cn/v2/flink/)
 
-- [Waterdrop v2.x For Spark](/zh-cn/v2/spark/)
+- [seatunnel v2.x For Spark](/zh-cn/v2/spark/)
 
   - [快速开始](/zh-cn/v2/spark/quick-start)
 
@@ -46,7 +46,7 @@
 
   - [插件开发](/zh-cn/v2/spark/developing-plugin)
 
-- [深入Waterdrop](/zh-cn/v2/internal.md)
+- [深入seatunnel](/zh-cn/v2/internal.md)
 
 - [Roadmap](/zh-cn/v2/roadmap.md)
 

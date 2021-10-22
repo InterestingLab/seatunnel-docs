@@ -1,7 +1,7 @@
 ## Source plugin : Kafka [Spark]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 2.0.0
 
 ### Description
@@ -46,8 +46,8 @@ Kafka集群地址，多个用","隔开
 
 ```
 kafkaStream {
-    topics = "waterdrop"
+    topics = "seatunnel"
     consumer.bootstrap.servers = "localhost:9092"
-    consumer.group.id = "waterdrop_group"
+    consumer.group.id = "seatunnel_group"
 }
 ```

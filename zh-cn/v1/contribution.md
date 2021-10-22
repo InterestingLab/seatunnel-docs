@@ -1,4 +1,4 @@
-# 为 Waterdrop 贡献代码 
+# 为 seatunnel 贡献代码 
 
 ## Coding Style
 
@@ -30,7 +30,7 @@ https://github.com/databricks/scala-style-guide
 
 * 非Interesting Lab 成员(常见的github协作流程):
 
-(1) 在Waterdrop主页 fork 这个项目 https://github.com/InterestingLab/waterdrop
+(1) 在seatunnel主页 fork 这个项目 https://github.com/InterestingLab/seatunnel
 
 (2) 开发
 

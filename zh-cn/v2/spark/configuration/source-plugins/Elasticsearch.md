@@ -1,7 +1,7 @@
 ## Source plugin : Elasticsearch [Spark]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 2.0.0
 
 ### Description
@@ -44,7 +44,7 @@ ElasticSearch index名称，支持 `*` 模糊匹配
 ```
 elasticsearch {
     hosts = ["localhost:9200"]
-    index = "waterdrop-20190424"
+    index = "seatunnel-20190424"
     result_table_name = "my_dataset"
   }
 ```
@@ -53,10 +53,10 @@ elasticsearch {
 ```
 elasticsearch {
     hosts = ["localhost:9200"]
-    index = "waterdrop-*"
+    index = "seatunnel-*"
     es.read.field.include = "name, age"
     resulttable_name = "my_dataset"
   }
 ```
 
-> 匹配所有以 `waterdrop-` 开头的索引， 并且仅仅读取 `name`和 `age` 两个字段。
+> 匹配所有以 `seatunnel-` 开头的索引， 并且仅仅读取 `name`和 `age` 两个字段。

@@ -1,7 +1,7 @@
 ## Input plugin : Alluxio
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.5.0
 
 ### Description
@@ -19,14 +19,14 @@ Read raw data from Alluxio.
 File path on Alluxio cluster.
 
 ### Note 
-if use alluxio with zookeeper, please add below in start-waterdrop.sh 
+if use alluxio with zookeeper, please add below in start-seatunnel.sh 
 
 ```
 driverJavaOpts="-Dalluxio.user.file.writetype.default=CACHE_THROUGH -Dalluxio.zookeeper.address=your.zookeeper.address:zookeeper.port -Dalluxio.zookeeper.enabled=true"
 executorJavaOpts="-Dalluxio.user.file.writetype.default=CACHE_THROUGH -Dalluxio.zookeeper.address=your.zookeeper.address:zookeeper.port -Dalluxio.zookeeper.enabled=true"
 ```
 
-or you can also add below in spark{} in waterdrop configuration after 1.5.0 
+or you can also add below in spark{} in seatunnel configuration after 1.5.0 
 
 ```
 spark.driverJavaOpts="-Dalluxio.user.file.writetype.default=CACHE_THROUGH -Dalluxio.zookeeper.address=your.zookeeper.address:zookeeper.port -Dalluxio.zookeeper.enabled=true"

@@ -1,6 +1,6 @@
 # 快速开始
 
-> 我们以一个通过socket接收数据，将数据分割为多个字段，并输出处理结果的应用为例，快速展示Waterdrop的使用方法。
+> 我们以一个通过socket接收数据，将数据分割为多个字段，并输出处理结果的应用为例，快速展示seatunnel的使用方法。
 
 ### Step 1: 准备Flink 运行环境
 
@@ -8,28 +8,28 @@
 
 请先[下载Flink](https://flink.apache.org/downloads.html), Flink版本请选择 >= 1.9.0。下载完成进行[安装](https://ci.apache.org/projects/flink/flink-docs-release-1.9/zh/ops/deployment/cluster_setup.html)
 
-### Step 2: 下载 Waterdrop
+### Step 2: 下载 seatunnel
 
-进入[Waterdrop安装包下载页面](https://github.com/InterestingLab/waterdrop/releases/tag/v2.0.0-pre)，下载最新版`Waterdrop-<version>.zip`
+进入[seatunnel安装包下载页面](https://github.com/InterestingLab/seatunnel/releases/tag/v2.0.0-pre)，下载最新版`seatunnel-<version>.zip`
 
 或者直接下载指定版本（以2.0.0-pre为例）：
 
 ```
-wget https://github.com/InterestingLab/waterdrop/releases/download/v2.0.0-pre/waterdrop-dist-2.0.0-pre-2.11.8-release.zip -O waterdrop-2.0.0.zip
+wget https://github.com/InterestingLab/seatunnel/releases/download/v2.0.0-pre/seatunnel-dist-2.0.0-pre-2.11.8-release.zip -O seatunnel-2.0.0.zip
 ```
 
 下载后，解压：
 
 ```
-unzip waterdrop-<version>.zip
-ln -s waterdrop-<version> waterdrop
+unzip seatunnel-<version>.zip
+ln -s seatunnel-<version> seatunnel
 ```
 
-### Step 3: 配置 Waterdrop
+### Step 3: 配置 seatunnel
 
-编辑 `config/waterdrop-env.sh`, 指定必须环境配置如FLINK_HOME(Step 1 中Flink下载并解压后的目录)
+编辑 `config/seatunnel-env.sh`, 指定必须环境配置如FLINK_HOME(Step 1 中Flink下载并解压后的目录)
 
-编辑 `config/application.conf`, 它决定了Waterdrop启动后，数据输入，处理，输出的方式和逻辑。
+编辑 `config/application.conf`, 它决定了seatunnel启动后，数据输入，处理，输出的方式和逻辑。
 
 ```
 env {
@@ -69,11 +69,11 @@ nc -l -p 9999
 ```
 
 
-### Step 5: 启动Waterdrop
+### Step 5: 启动seatunnel
 
 ```
-cd waterdrop
-./bin/start-waterdrop-flink.sh  --config ./config/application.conf
+cd seatunnel
+./bin/start-seatunnel-flink.sh  --config ./config/application.conf
 
 ```
 
@@ -92,24 +92,24 @@ xg#1995,xg,1995
 ### 总结
 
 
-如果想了解更多的Waterdrop配置示例可参见：
+如果想了解更多的seatunnel配置示例可参见：
 
-[配置示例1 : Streaming 流式计算](https://github.com/InterestingLab/waterdrop/blob/wd-v2-baseline/config/flink.streaming.conf.template)
+[配置示例1 : Streaming 流式计算](https://github.com/InterestingLab/seatunnel/blob/wd-v2-baseline/config/flink.streaming.conf.template)
 
 以上配置为默认【流式处理配置模版】，可直接运行，命令如下：
 
 ```
-cd waterdrop
-./bin/start-waterdrop-flink.sh --config ./config/flink.streaming.conf.template
+cd seatunnel
+./bin/start-seatunnel-flink.sh --config ./config/flink.streaming.conf.template
 
 ```
 
-[配置示例2 : Batch 离线批处理](https://github.com/InterestingLab/waterdrop/blob/wd-v2-baseline/config/flink.batch.conf.template)
+[配置示例2 : Batch 离线批处理](https://github.com/InterestingLab/seatunnel/blob/wd-v2-baseline/config/flink.batch.conf.template)
 
 以上配置为默认【离线批处理配置模版】，可直接运行，命令如下：
 
 ```
-cd waterdrop
-./bin/start-waterdrop-flink.sh --config ./config/flink.batch.conf.template
+cd seatunnel
+./bin/start-seatunnel-flink.sh --config ./config/flink.batch.conf.template
 
 ```

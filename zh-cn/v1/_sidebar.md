@@ -18,7 +18,7 @@
 
 - [插件开发](/zh-cn/v1/developing-plugin)
 
-- [深入Waterdrop](/zh-cn/v1/internal)
+- [深入seatunnel](/zh-cn/v1/internal)
 
 - [Roadmap](/zh-cn/v1/roadmap)
 

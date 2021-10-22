@@ -1,12 +1,12 @@
 ## Filter plugin : Grok
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
 
-使用Grok Pattern来解析字段，[支持的grok pattern](https://github.com/InterestingLab/waterdrop/blob/master/plugins/grok/files/grok-patterns/grok-patterns),
+使用Grok Pattern来解析字段，[支持的grok pattern](https://github.com/InterestingLab/seatunnel/blob/master/plugins/grok/files/grok-patterns/grok-patterns),
  
 grok pattern[grok pattern 测试地址](https://grokdebug.herokuapp.com/)
 
@@ -32,7 +32,7 @@ If true, only store named captures from grok.
 
 ##### patterns_dir [string]
 
-patterns文件路径，可不填，Waterdrop自带了丰富的[grok-patterns文件](https://github.com/InterestingLab/waterdrop/tree/master/plugins/grok/files/grok-patterns)
+patterns文件路径，可不填，seatunnel自带了丰富的[grok-patterns文件](https://github.com/InterestingLab/seatunnel/tree/master/plugins/grok/files/grok-patterns)
 
 ##### source_field [string]
 

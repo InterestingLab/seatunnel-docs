@@ -1,12 +1,12 @@
 ## Input plugin : FakeStream [Streaming]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
 
-Fake Input主要用于方便得生成用户指定的数据，作为输入来对Waterdrop进行功能验证，测试，以及性能测试等。
+Fake Input主要用于方便得生成用户指定的数据，作为输入来对seatunnel进行功能验证，测试，以及性能测试等。
 
 ### Options
 

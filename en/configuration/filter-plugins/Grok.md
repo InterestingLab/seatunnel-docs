@@ -1,12 +1,12 @@
 ## Filter plugin : Grok
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
 
-Parse arbitrary text into structured data with columns  using Grok Pattern. Please have a look at [available grok pattern](https://github.com/InterestingLab/waterdrop/blob/master/plugins/grok/files/grok-patterns/grok-patterns).
+Parse arbitrary text into structured data with columns  using Grok Pattern. Please have a look at [available grok pattern](https://github.com/InterestingLab/seatunnel/blob/master/plugins/grok/files/grok-patterns/grok-patterns).
 
 You can also go to [http://grokdebug.herokuapp.com](http://grokdebug.herokuapp.com) to debug grok patterns if you need some hint for grok pattern syntax.
 
@@ -32,7 +32,7 @@ Grok pattern.
 
 ##### patterns_dir [string]
 
-The directory of pattern files. Waterdrop ships by default with a bunch of [patterns]([grok-patterns文件](https://github.com/InterestingLab/waterdrop/tree/master/plugins/grok/files/grok-patterns)), so you don’t necessarily need to configure this unless you want to add additional patterns.
+The directory of pattern files. seatunnel ships by default with a bunch of [patterns]([grok-patterns文件](https://github.com/InterestingLab/seatunnel/tree/master/plugins/grok/files/grok-patterns)), so you don’t necessarily need to configure this unless you want to add additional patterns.
 
 
 ##### source_field [string]

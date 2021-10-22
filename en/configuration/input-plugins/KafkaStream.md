@@ -1,7 +1,7 @@
 ## Input plugin : Kafka
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.1.0
 
 ### Description
@@ -45,9 +45,9 @@ The way to specify parameters is to use the prefix "consumer" before the paramet
 
 ```
 kafkaStream {
-    topics = "waterdrop"
+    topics = "seatunnel"
     consumer.bootstrap.servers = "localhost:9092"
-    consumer.group.id = "waterdrop_group"
+    consumer.group.id = "seatunnel_group"
     consumer.rebalance.max.retries = 100
 }
 ```
@@ -56,9 +56,9 @@ kafkaStream {
 
 ```
 kafkaStream {
-    topics = "waterdrop"
+    topics = "seatunnel"
     consumer.bootstrap.servers = "localhost:9092"
-    consumer.group.id = "waterdrop_group"
+    consumer.group.id = "seatunnel_group"
     consumer.rebalance.max.retries = 100
     consumer.failOnDataLoss = false
 }

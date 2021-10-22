@@ -1,4 +1,4 @@
-# Waterdrop
+# seatunnel
 
 > 一个简单易用，高性能，能够应对海量数据的数据处理产品
 
@@ -11,7 +11,7 @@
 - 支持spark 2.x
 
 
-[GitHub](https://github.com/InterestingLab/waterdrop/)
+[GitHub](https://github.com/InterestingLab/seatunnel/)
 [Get Started](/zh-cn/v1/)
 
 <!-- 背景色 -->

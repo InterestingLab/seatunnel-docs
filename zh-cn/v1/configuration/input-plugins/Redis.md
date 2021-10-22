@@ -1,7 +1,7 @@
 ## Input plugin : Redis
 
 * Author: InterestingLab
-* Homepage: https://github.com/InterestingLab/waterdrop
+* Homepage: https://github.com/InterestingLab/seatunnel
 * Version: 1.1.0
 
 ### Description

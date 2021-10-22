@@ -1,7 +1,7 @@
 ## Source plugin : Hive [Spark]
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 2.0.0
 
 ### Description
@@ -28,7 +28,7 @@
 **注意：使用hive source必须做如下配置：**
 
 ```
-# Waterdrop 配置文件中的spark section中：
+# seatunnel 配置文件中的spark section中：
 
 env {
   ...

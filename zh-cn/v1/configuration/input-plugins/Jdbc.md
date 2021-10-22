@@ -1,7 +1,7 @@
 ## Input plugin : Jdbc
 
 * Author: InterestingLab
-* Homepage: https://interestinglab.github.io/earth-fleet-docs
+* Homepage: https://interestinglab.github.io/seatunnel-docs
 * Version: 1.0.0
 
 ### Description
@@ -104,9 +104,9 @@ jdbc {
 指定的JDBC的Jar包放置在 `plugins` 目录下的指定结构中，如下
 
 ```
-cd waterdrop
+cd seatunnel
 mkdir -p plugins/my_plugins/lib
 cp third-part.jar plugins/my_plugins/lib
 ```
 
-即可被 `Waterdrop` 识别加载。
+即可被 `seatunnel` 识别加载。

@@ -1,8 +1,8 @@
-## start-waterdrop-flink.sh 使用方法
+## start-seatunnel-flink.sh 使用方法
 
 
 ```bash
- bin/start-waterdrop-flink.sh -c config-path -i key=value [other params]
+ bin/start-seatunnel-flink.sh -c config-path -i key=value [other params]
 ```
 > 使用 `-c`或者`--config`来指定配置文件的路径。
 
@@ -32,7 +32,7 @@ sink {
 ```
 
 ```bash
- bin/start-waterdrop-flink.sh -c config-path -i my_name=kid-xiong
+ bin/start-seatunnel-flink.sh -c config-path -i my_name=kid-xiong
 ```
 这样指定将会把配置文件中的`"${my_name}"`替换为`kid-xiong`
 
@@ -45,12 +45,12 @@ flink run -h
 ![standalone](../../../images/flink/standalone.jpg)
 例如：-p 2 指定作业并行度为2
 ```bash
-   bin/start-waterdrop-flink.sh -p 2 -c config-path
+   bin/start-seatunnel-flink.sh -p 2 -c config-path
 ```
 
 * flink yarn-cluster 可配置参数
 ![yarn-cluster](../../../images/flink/yarn.jpg)
-例如：-m yarn-cluster -ynm waterdrop 指定作业在运行在yarn上，并且yarn webUI的名称为waterdrop
+例如：-m yarn-cluster -ynm seatunnel 指定作业在运行在yarn上，并且yarn webUI的名称为seatunnel
 ```bash
-   bin/start-waterdrop-flink.sh -m yarn-cluster -ynm waterdrop -c config-path
+   bin/start-seatunnel-flink.sh -m yarn-cluster -ynm seatunnel -c config-path
 ```
