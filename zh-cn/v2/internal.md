@@ -16,12 +16,9 @@
 
 * 流程代码与业务逻辑应该分离。
 
-如果想进一步了解seatunnel的设计与实现原理，请查看视频：https://time.geekbang.org/dailylesson/detail/100028486
-
 #### seatunnel的插件化体系是如何构建出来的？
 
 可能有些同学听说过Google Guice，它是一个非常优秀的依赖注入框架，很多开源项目如Elasticsearch就是利用的Guice实现的各个模块依赖的注入，当然包括Elasticsearch 插件。
 
 其实对于插件体系架构来说，java本身就带了一个可以用来实现插件化的功能，即[Java SPI](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html)，开源项目Presto中也大量使用了它来加载插件。
 
-seatunnel的项目负责人是Presto源码的重度粉丝，所以seatunnel参考了Presto的插件管理方式，也使用了Java SPI来实现了插件化的管理。

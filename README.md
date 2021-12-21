@@ -17,15 +17,6 @@ seatunnel 提供可直接执行的软件包，没有必要自行编译源代码�
 
 各种线上应用案例，请见: https://interestinglab.github.io/seatunnel-docs/#/zh-cn/v1/case_study/
 
-**如果你遇到任何问题，请联系项目负责人 Gary(微信: `garyelephant`) , RickyHuo(微信: `chodomatte1994`)，加微信备注"seatunnel"，我们把你拉到`seatunnel & Spark & Flink 交流群`里，并为你提供全程免费服务，你也可以与其他伙伴交流大数据技术。扫码加我，拉你入群：**
-
-<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/wechat-qrcode/garyelephant.jpeg" height="240" width="240">
-
-想了解seatunnel的设计与实现原理，请查看视频：[https://time.geekbang.org/dailylesson/detail/100028486](https://time.geekbang.org/dailylesson/detail/100028486)
-
-
----
-
 ## 为什么我们需要 seatunnel
 
 Databricks 开源的 Apache Spark 对于分布式数据处理来说是一个伟大的进步。我们在使用 Spark 时发现了很多可圈可点之处，同时我们也发现了我们的机会 —— 通过我们的努力让Spark的使用更简单，更高效，并将业界和我们使用Spark的优质经验固化到seatunnel这个产品中，明显减少学习成本，加快分布式数据处理能力在生产环境落地。
@@ -169,8 +160,6 @@ Watedrop 为浙江乐控信息科技有限公司旗下乐控智能提供物联�
 
 分蛋科技使用seatunnel做数据仓库实时同步，近百个Pipeline同步处理；数据流实时统计，数据平台指标离线计算。
 
-* 其他公司 ... 期待您的加入，请联系微信: garyelephant
-
 ## 项目Star增长趋势
 
 ```
@@ -190,8 +179,7 @@ seatunnel已进入高速成长期，如果你支持此项目，请点Star.
 
 感谢[所有开发者](https://github.com/InterestingLab/seatunnel/graphs/contributors)
 
-## 联系项目负责人
-
-Garyelephant : garygaowork@gmail.com, 微信: garyelephant
-
-RickyHuo : huochen1994@163.com, 微信: chodomatte1994
+## 联系我们
+* 邮件列表 : **dev@seatunnel.apache.org**. 发送任意内容至 `dev-subscribe@seatunnel.apache.org`， 按照回复订阅邮件列表。
+* 发送 `Request to join SeaTunnel slack` 邮件到邮件列表 (`dev@seatunnel.apache.org`), 我们会邀请你加入（在此之前请确认已经注册Slack）.
+* [bilibili B站 视频](https://space.bilibili.com/1542095008)
