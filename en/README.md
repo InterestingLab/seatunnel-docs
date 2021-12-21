@@ -172,3 +172,7 @@ http://www.iana.org/assignments/character-sets/character-sets.xhtml
 
 > compressed codec
 
+## Contact Us
+* Mail list: **dev@seatunnel.apache.org**. Mail to `dev-subscribe@seatunnel.apache.org`, follow the reply to subscribe the mail list.
+* Send `Request to join SeaTunnel slack` mail to the mail list(`dev@seatunnel.apache.org`), we will invite you in.
+
