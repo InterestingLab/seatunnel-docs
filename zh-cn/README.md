@@ -144,7 +144,7 @@ seatunnel 为永辉云创旗下新零售品牌永辉生活提供电商用户行�
 
 ![浙江乐控信息科技有限公司 logo](../images/zhejiang_lekong_xinxi_keji-logo.jpg ':size=130%')
 
-Watedrop 为浙江乐控信息科技有限公司旗下乐控智能提供物联网交互数据实时流sql分析(Structured Streaming 引擎)和离线数据分析。每天处理的数据量8千万到一亿条数据 最终数据落地到kafka和mysql数据库。
+seatunnel 为浙江乐控信息科技有限公司旗下乐控智能提供物联网交互数据实时流sql分析(Structured Streaming 引擎)和离线数据分析。每天处理的数据量8千万到一亿条数据 最终数据落地到kafka和mysql数据库。
 
 * [上海分蛋信息科技](https://91fd.com)，大数据数据分析平台
 
