@@ -56,7 +56,7 @@ Input/Source[数据源输入] -> Filter/Transform[数据处理] -> Output/Sink[�
 ```
 
 <p align="center">
-    <img src="https://github.com/apache/incubator-seatunnel-website/blob/main/static/image/seatunnel-workflow.svg" height="460" width="280" >
+    <img src="https://github.com/apache/incubator-seatunnel-website/blob/main/static/image/seatunnel-workflow.svg" height="690" width="420" >
 </p>
 
 
