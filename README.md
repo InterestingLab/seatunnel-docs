@@ -54,7 +54,7 @@ Databricks 开源的 Apache Spark 对于分布式数据处理来说是一个伟�
 
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/wd-workflow.png" height="460" width="280" >
+    <img src="https://github.com/apache/incubator-seatunnel-website/blob/main/static/image/seatunnel-workflow.svg" height="460" width="280" >
 </p>
 
 
