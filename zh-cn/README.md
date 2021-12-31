@@ -106,12 +106,6 @@ Elasticsearch, File, Hdfs, Jdbc, Kafka, Mysql, S3, Stdout, 自行开发的Output
 
 新浪运维数据分析平台使用seatunnel为新浪新闻，CDN等服务做运维大数据的实时和离线分析，并写入Clickhouse。
 
-* [字节跳动](https://bytedance.com/zh)，广告数据平台
-
-![字节跳动 Logo](../images/bytedance-logo.jpeg ':size=40%')
-
-字节跳动使用seatunnel实现了多源数据的关联分析(如Hive和ES的数据源关联查询分析)，大大简化了不同数据源之间的分析对比工作，并且节省了大量的Spark程序的学习和开发时间。
-
 * [搜狗](http://agent.e.sogou.com/)，搜狗奇点系统
 
 ![搜狗 Logo](../images/sougou-logo.png ':size=40%')
