@@ -96,27 +96,27 @@ Elasticsearch, File, Hdfs, Jdbc, Kafka, Mysql, S3, Stdout, 自行开发的Output
 
 * [微博](https://weibo.com), 增值业务部数据平台
 
-![微博 Logo](https://img.t.sinajs.cn/t5/style/images/staticlogo/groups3.png?version=f362a1c5be520a15 ':size=200%')
+<img src="https://img.t.sinajs.cn/t5/style/images/staticlogo/groups3.png?version=f362a1c5be520a15" height="120" width="160" >
 
 微博某业务有数百个实时流式计算任务使用内部定制版seatunnel，以及其子项目[Guardian](https://github.com/InterestingLab/guardian)做seatunnel On Yarn的任务监控。
 
 * [新浪](http://www.sina.com.cn/), 大数据运维分析平台
 
-![新浪 Logo](../images/sina-logo.png ':size=170%')
+<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/sina-logo.png" height="60" width="120" >
 
 新浪运维数据分析平台使用seatunnel为新浪新闻，CDN等服务做运维大数据的实时和离线分析，并写入Clickhouse。
 
 * [搜狗](http://agent.e.sogou.com/)，搜狗奇点系统
 
-![搜狗 Logo](../images/sougou-logo.png ':size=40%')
+<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/sougou-logo.png" height="70" width="200" >
 
 搜狗奇点系统使用 seatunnel 作为 etl 工具, 帮助建立实时数仓体系
 
 * [趣头条](https://www.qutoutiao.net/)，趣头条数据中心
 
-![趣头条 Logo](../images/qutoutiao-logo.jpg ':size=40%')
+<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/qutoutiao-logo.jpg" height="90" width="90" >
 
- 趣头条数据中心，使用seatunnel支撑mysql to hive的离线etl任务、实时hive to clickhouse的backfill技术支撑，很好的cover离线、实时大部分任务场景。
+趣头条数据中心，使用seatunnel支撑mysql to hive的离线etl任务、实时hive to clickhouse的backfill技术支撑，很好的cover离线、实时大部分任务场景。
 
 * [一下科技](https://www.yixia.com/), 一直播数据平台
 
@@ -124,25 +124,25 @@ Elasticsearch, File, Hdfs, Jdbc, Kafka, Mysql, S3, Stdout, 自行开发的Output
 
 * 永辉超市子公司-永辉云创，会员电商数据分析平台
 
-![永辉云创 Logo](../images/yonghuiyunchuang-logo.png)
+<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/yonghuiyunchuang-logo.png" height="60" width="120" >
 
 seatunnel 为永辉云创旗下新零售品牌永辉生活提供电商用户行为数据实时流式与离线SQL计算。
 
 * 水滴筹, 数据平台
 
-![水滴筹 logo](../images/shuidichou-logo.jpg ':size=130%')
+<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/shuidichou-logo.jpg" height="60" width="120" >
 
 水滴筹在Yarn上使用seatunnel做实时流式以及定时的离线批处理，每天处理3～4T的数据量，最终将数据写入Clickhouse。
 
 * 浙江乐控信息科技有限公司
 
-![浙江乐控信息科技有限公司 logo](../images/zhejiang_lekong_xinxi_keji-logo.jpg ':size=130%')
+<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/zhejiang_lekong_xinxi_keji-logo.jpg" height="60" width="120" >
 
 Watedrop 为浙江乐控信息科技有限公司旗下乐控智能提供物联网交互数据实时流sql分析(Structured Streaming 引擎)和离线数据分析。每天处理的数据量8千万到一亿条数据 最终数据落地到kafka和mysql数据库。
 
 * [上海分蛋信息科技](https://91fd.com)，大数据数据分析平台
 
-![上海分蛋信息科技 logo](../images/fendan-keji-logo.jpeg ':size=70%')
+<img src="https://raw.githubusercontent.com/InterestingLab/seatunnel-docs/master/zh-cn/images/fendan-keji-logo.jpeg" height="60" width="120" >
 
 分蛋科技使用seatunnel做数据仓库实时同步，近百个Pipeline同步处理；数据流实时统计，数据平台指标离线计算。
 
