@@ -6,17 +6,17 @@
 
 > 如果你熟悉Spark或者已准备好Spark运行环境，可忽略此步骤，Spark不需要做任何特殊配置。
 
-请先[下载Spark](http://spark.apache.org/downloads.html), Spark版本请选择 >= 2.x.x。下载解压后，不需要做任何配置即可提交Spark deploy-mode = local模式的任务。
+请先[下载Spark](http://spark.apache.org/downloads.html), Spark版本请选择 >= 2.3.0, < 3.0.0。下载解压后，不需要做任何配置即可提交Spark deploy-mode = local模式的任务。
 如果你期望任务运行在Standalone集群或者Yarn、Mesos集群上，请参考Spark官网的[Spark部署文档](http://spark.apache.org/docs/latest/cluster-overview.html)。
 
 ### Step 2: 下载 seatunnel
 
 进入[seatunnel安装包下载页面](https://github.com/InterestingLab/seatunnel/releases/latest)，下载最新版`seatunnel-<version>.zip`
 
-或者直接下载指定版本（以1.1.2为例）：
+或者直接下载指定版本（以1.5.7为例）：
 
 ```
-wget https://github.com/InterestingLab/seatunnel/releases/download/v1.1.2/seatunnel-1.1.2.zip -O seatunnel-1.1.2.zip
+wget https://github.com/InterestingLab/seatunnel/releases/download/v1.5.7/seatunnel-1.5.7.zip -O seatunnel-1.5.7.zip
 ```
 
 下载后，解压：
