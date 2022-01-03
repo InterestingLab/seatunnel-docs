@@ -69,7 +69,7 @@ nc -l -p 9999
 
 ```
 cd seatunnel
-./bin/start-seatunnel.sh --master local[4] --deploy-mode client --config ./config/application.conf
+./bin/start-seatunnel.sh --master local --deploy-mode client --config ./config/application.conf
 
 ```
 
