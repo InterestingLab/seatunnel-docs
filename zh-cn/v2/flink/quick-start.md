@@ -84,7 +84,7 @@ cd seatunnel
 ```
 xg#1995
 ```
-在flink Web-UI的TaskManager Stdout日志打印出:
+可在 flink Web-UI（http://localhost:8081/#/task-manager）的 TaskManager Stdout日志打印出:
 
 ```
 xg#1995,xg,1995
