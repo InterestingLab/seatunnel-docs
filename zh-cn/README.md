@@ -8,13 +8,13 @@ seatunnel 是一个`非常易用`，`高性能`、支持`实时流式`和`离线
 
 ### 如果您没时间看下面内容，请直接进入正题:  
 
-请点击进入快速入门：https://interestinglab.github.io/seatunnel-docs-docs/#/zh-cn/v1/quick-start
+请点击进入快速入门：https://interestinglab.github.io/seatunnel-docs/#/zh-cn/v1/quick-start
 
-seatunnel 提供可直接执行的软件包，没有必要自行编译源代码，下载地址：https://github.com/InterestingLab/seatunnel/releases
+seatunnel 提供可直接执行的软件包，没有必要自行编译源代码，下载地址：https://github.com/apache/incubator-seatunnel/releases
 
-文档地址：https://interestinglab.github.io/seatunnel-docs-docs/
+文档地址：https://interestinglab.github.io/seatunnel-docs/
 
-各种线上应用案例，请见: https://interestinglab.github.io/seatunnel-docs-docs/#/zh-cn/v1/case_study/
+各种线上应用案例，请见: https://interestinglab.github.io/seatunnel-docs/#/zh-cn/v1/case_study/
 
 ---
 
@@ -30,7 +30,7 @@ Databricks 开源的 Apache Spark 对于分布式数据处理来说是一个伟�
 * 缺少应用运行状态监控
 
 
-"seatunnel" 的中文是“水滴”，来自中国当代科幻小说作家刘慈欣的《三体》系列，它是三体人制造的宇宙探测器，会反射几乎全部的电磁波，表面绝对光滑，温度处于绝对零度，全部由被强互作用力紧密锁死的质子与中子构成，无坚不摧。在末日之战中，仅一个水滴就摧毁了人类太空武装力量近2千艘战舰。
+SeaTunnel 原名 Waterdrop，2021 年 10 月 12 日起更名为 SeaTunnel。
 
 ## seatunnel 使用场景
 
@@ -75,7 +75,7 @@ Add, Checksum, Convert, Date, Drop, Grok, Json, Kv, Lowercase, Remove, Rename, R
 
 * Output/Sink plugin
 
-Elasticsearch, File, Hdfs, Jdbc, Kafka, Mysql, S3, Stdout, 自行开发的Output plugin
+Elasticsearch, File, Hdfs, Jdbc, Kafka, Mysql, ClickHouse, Stdout, 自行开发的Output plugin
 
 ## 环境依赖
 
@@ -157,7 +157,7 @@ seatunnel 为浙江乐控信息科技有限公司旗下乐控智能提供物联�
 
 ## 开发者
 
-感谢[所有开发者](https://github.com/InterestingLab/seatunnel/graphs/contributors)
+感谢[所有开发者](https://github.com/apache/incubator-seatunnel/graphs/contributors)
 
 ## 联系我们
 * 邮件列表 : **dev@seatunnel.apache.org**. 发送任意内容至 `dev-subscribe@seatunnel.apache.org`， 按照回复订阅邮件列表。
