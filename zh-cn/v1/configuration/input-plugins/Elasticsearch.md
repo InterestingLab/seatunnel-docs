@@ -66,7 +66,7 @@ elasticsearch {
     hosts = ["localhost:9200"]
     index = "seatunnel-*"
     es.read.field.include = "name, age"
-    resulttable_name = "my_dataset"
+    result_table_name = "my_dataset"
   }
 ```
 
