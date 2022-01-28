@@ -6,7 +6,7 @@
 
 * 完全可以做到开箱即用
 
-* 开发者可以开发自己的插件，plugin in 到 seatunnel上跑，而不需要写一个完整的Spark或者Flink程序
+* 开发者可以开发自己的插件，plugin 到 seatunnel上跑，而不需要写一个完整的Spark或者Flink程序
 
 * 当然，seatunnel从v2.0开始，同时支持Spark和Flink。
 
