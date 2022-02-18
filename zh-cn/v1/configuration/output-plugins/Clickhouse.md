@@ -56,7 +56,7 @@ ClickHouse用户密码，仅当ClickHouse中开启权限时需要此字段。
 
 ##### retry_codes [array]
 
-出现异常时，会重试操作的ClickHouse异常错误码。详细错误码列表参考 [ClickHouseErrorCode](https://github.com/yandex/clickhouse-jdbc/blob/master/src/main/java/ru/yandex/clickhouse/except/ClickHouseErrorCode.java)
+出现异常时，会重试操作的ClickHouse异常错误码。详细错误码列表参考 [ClickHouseErrorCode](https://github.com/ClickHouse/clickhouse-jdbc/blob/master/clickhouse-jdbc/src/main/java/ru/yandex/clickhouse/except/ClickHouseErrorCode.java)
 
 如果多次重试都失败，将会丢弃这个批次的数据，慎用！！
 
@@ -70,7 +70,7 @@ ClickHouse用户用户名，仅当ClickHouse中开启权限时需要此字段
 
 ##### clickhouse [string]
 
-除了以上必备的 clickhouse-jdbc须指定的参数外，用户还可以指定多个非必须参数，覆盖了clickhouse-jdbc提供的所有[参数](https://github.com/yandex/clickhouse-jdbc/blob/master/src/main/java/ru/yandex/clickhouse/settings/ClickHouseProperties.java).
+除了以上必备的 clickhouse-jdbc须指定的参数外，用户还可以指定多个非必须参数，覆盖了clickhouse-jdbc提供的所有[参数](https://github.com/ClickHouse/clickhouse-jdbc/blob/master/clickhouse-jdbc/src/main/java/ru/yandex/clickhouse/settings/ClickHouseProperties.java).
 
 指定参数的方式是在原参数名称上加上前缀"clickhouse."，如指定socket_timeout的方式是: clickhouse.socket_timeout = 50000。如果不指定这些非必须参数，它们将使用clickhouse-jdbc给出的默认值。
 

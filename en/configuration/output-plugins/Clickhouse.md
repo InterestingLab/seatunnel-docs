@@ -56,7 +56,7 @@ ClickHouse username, only used when ClickHouse has authority authentication.
 
 ##### clickhouse [string]
 
-In addition to the above parameters that must be specified for the clickhouse jdbc, you can also specify multiple parameters described in [clickhouse-jdbc settings](https://github.com/yandex/clickhouse-jdbc/blob/master/src/main/java/ru/yandex/clickhouse/settings/ClickHouseProperties.java)
+In addition to the above parameters that must be specified for the clickhouse jdbc, you can also specify multiple parameters described in [clickhouse-jdbc settings](https://github.com/ClickHouse/clickhouse-jdbc/blob/master/clickhouse-jdbc/src/main/java/ru/yandex/clickhouse/settings/ClickHouseProperties.java)
 
 The way to specify parameters is to use the prefix "clickhouse" before the parameter. For example, `socket_timeout` is specified as: `clickhouse.socket_timeout = 50000`.If you do not specify these parameters, it will be set the default values according to clickhouse-jdbc.
 
