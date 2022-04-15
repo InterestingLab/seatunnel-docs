@@ -48,4 +48,4 @@ transform {
 }
 ```
 
-> 如果不指定`source_table_name`的话，sql插件处理的就是 `fake_2`的数据，设置了为`fake_1`将处理`fake_1`的数据
+> 如果不指定`source_table_name`的话，Transform插件处理的就是 `fake_2`的数据，设置了为`fake_1`将处理`fake_1`的数据
